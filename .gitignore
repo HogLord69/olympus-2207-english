@@ -1,0 +1,23 @@
+# Never commit game assets
+*.dat
+*.DAT
+*.orig
+*.frm
+*.FRM
+*.exe
+*.dll
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Built release archives - multi-GB, never committed
+/release/
+*.zip
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
