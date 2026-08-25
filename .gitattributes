@@ -1,1 +1,6 @@
 * text=auto eol=lf
+
+# The payload is copied straight into a game folder. Store it byte-for-byte:
+# these are fixed-format records and files the engine reads directly, and
+# rewriting CRLF to LF corrupts them.
+payload/** -text
