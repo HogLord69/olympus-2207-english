@@ -1,0 +1,32 @@
+@OLYMPUS 2207 (Fixed Edition)
+
+#Built on top of Olympus 2207 v1.2
+
+----------------------------------------------------
+
+#BUILD AUTHOR
+Foxx
+
+#MODDING ASSISTANCE
+
+Crafty
+Mr.Stalin
+Pyran
+
+#MATERIALS USED, BY
+
+Phobos 2077
+Mash
+Crafty
+Mr.Stalin
+Timeslip
+
+#BUG REPORTS AND SUGGESTIONS
+
+cycvuk
+Pyran
+qweqwe123123
+
+#MANY THANKS
+
+NEBESA GAMES for the game.

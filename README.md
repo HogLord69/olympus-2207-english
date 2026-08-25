@@ -10,6 +10,10 @@ patch to an install you already have with `oly_tool.py`.
 
 **42,296 strings across 270 files. No Russian left.**
 
+Plus the half that is not strings: **201 files** of interface art with English
+text baked into the pixels, premade characters, narration, and two mod folders.
+See [`payload/`](payload/).
+
 ---
 
 ## Most of this was a port, not a translation
