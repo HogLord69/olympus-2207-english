@@ -110,6 +110,28 @@ more ids; each block has 700–990 spare.
 Pairing by id, by position, and by digits alone were all tried first and all
 fail. The script reports a disagreement rather than guessing past it.
 
+## The sfall messages are not .msg files
+
+`sfall\translations.ini` holds the karma messages, the quick-save prompt,
+poison damage, the party HUD labels (`Lvl:` / `AC:` / `Addicted`), the critical
+hit messages, and all fourteen unarmed attack names shown in the inventory --
+56 keys in total. **It is not a `.msg` file, so no step above ever looked at
+it**, and v1.0 shipped with 55 of its 56 values still in Russian.
+
+It is fixed by copying Resurrection's English file, which is key-for-key
+identical: same 56 keys, same six sections, in the same order. The one value
+that is not a message, `XltTable` (the codepage mapping), is byte-identical
+between the two, so the copy changes no behaviour.
+
+Olympus's `CriticalMsg` keys are already spelled with a Latin `C`. Sonora's
+were spelled with a Cyrillic `С` (U+0421), which sfall never matches, so that
+option silently did nothing there -- worth checking in any other game before
+assuming its keys are wired up.
+
+`tools/audit_gaps.py` in the sibling
+[trilogy repo](https://github.com/HogLord69/fallout-english-localization)
+checks this and two related gap classes across a whole install.
+
 ## Verifying
 
 ```bash
