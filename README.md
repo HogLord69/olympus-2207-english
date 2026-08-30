@@ -10,9 +10,14 @@ patch to an install you already have with `oly_tool.py`.
 
 **42,296 strings across 270 files. No Russian left.**
 
-Plus the half that is not strings: **201 files** of interface art with English
-text baked into the pixels, premade characters, narration, and two mod folders.
-See [`payload/`](payload/).
+Plus the half that is not strings: **211 files** of interface art with English
+baked into the pixels, premade characters, cutscene narration, the help screen
+and the mod folders — shipped as `Olympus2207-FE-English-Patch.zip` in
+[Releases](../../releases), 2.4 MB, for anyone who already has the game and
+does not want the 1.7 GB build.
+
+The art is the official English 1.2 release's, so it is **not committed here** —
+this repository stays text and tooling, same as the others.
 
 ---
 
@@ -132,6 +137,37 @@ assuming its keys are wired up.
 [trilogy repo](https://github.com/HogLord69/fallout-english-localization)
 checks this and two related gap classes across a whole install.
 
+## The UI patch, and a defect it fixed in my own port
+
+`Olympus2207-FE-English-Patch.zip` in Releases completes the parts that are not
+`.msg` strings: the English 1.2 interface art, premade characters Chris, Cliff
+and Kevin, 47 cutscene narration subtitles, the help screen and tip buttons,
+the Inventory Filter and Keys Help mods, and the credits.
+
+**It also repairs ten files this project damaged.** The port writes a file's
+last block onto ids taken from the older English build, and in ten files those
+ids do not line up. Because Fallout 2 lets a repeated id overwrite the earlier
+one, the mismatch both blanked lines that had been working and left the intended
+ones missing — which the game renders as `Error`:
+
+```
+COMBATAI.MSG  PERK.MSG   STTEXT.MSG    NWMARK.MSG   OLMORO.MSG
+SJOSVALD.MSG  NWSAT.MSG  RBBELOCH.MSG  TGRDDEAD.MSG TIPTEXT.MSG
+```
+
+`PIPBOY.MSG` was hit hardest: holodisk titles 406-419 were gone outright,
+400-405 held run-on text, and three stray duplicate entries truncated every
+holodisk body at its first line.
+
+Every one of those ten files appears in this project's own risk audit as having
+a divergent id sequence. The probe and length-correlation checks were run
+against them, came back clean, and were believed. They were not sufficient —
+neither test can see an id collision inside a file, because both compare
+strings rather than checking whether two entries claim the same id.
+`tools/audit_gaps.py` in the [trilogy
+repo](https://github.com/HogLord69/fallout-english-localization) does check for
+it now.
+
 ## Verifying
 
 ```bash
@@ -151,6 +187,12 @@ reporting what it wrote tells you nothing about what it didn't.
    which is how the first Pip-Boy attempt doubled the file and how ten barks
    survived a "100% complete" build on a sibling project. Everything here works
    on occurrence lists.
+6. **Writing a block onto ids from a different build creates id collisions,
+   and no string-comparison check will catch it.** Fallout 2 lets a later
+   entry overwrite an earlier one with the same id, so the damage is silent:
+   working lines go blank and the intended ones never appear. Check that a
+   written file's ids are unique and complete, not just that its strings look
+   right.
 3. **`ScrnSet.msg` lives outside `master.dat`**, in `f2_res.dat` and
    `sfall.dat`. The `sfall` copy is the superset.
 4. **Encode output as cp1251.** English is ASCII so it is lossless, but the

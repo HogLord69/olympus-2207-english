@@ -40,13 +40,17 @@ game. Build 03.08.26.
 
 Posted here with his blessing.
 
-## The older English build
+## The English translation
 
-Almost all of the English text in this repository came from an existing English
-build of Olympus, not from this project. Whoever did that translation did the
-overwhelming majority of the work, and I have not been able to identify them.
+**keyboard gecko.**
 
-*If you know who translated Olympus 2207 into English, tell me and they go here.*
+Almost all of the English text here came from their translation of Olympus,
+not from this project. They did the overwhelming majority of the work; what
+this repository adds is the port onto the Fixed Edition, 98 strings for
+content the FE added, and the interface art.
+
+Credited by name thanks to the English UI patch's own README, which finally
+answered a question this file carried unanswered through several releases.
 
 ## Engine
 
