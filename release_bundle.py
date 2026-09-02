@@ -27,7 +27,9 @@ ASSET_LIMIT = 2 * 1000 ** 3
 
 # Backups and working files a player has no use for.
 SKIP_FILES = ["*.orig", "*.dmp", "sfall-log*.txt", "*.log"]
-SKIP_DIRS = ["uninstall"]
+# Personal savegames are never redistributed; the empty folder is
+# recreated below so the game can still save.
+SKIP_DIRS = ["uninstall", os.path.join("data", "savegame")]
 
 LAUNCHER = """@echo off
 rem Olympus 2207 -- English. Must run from its own folder.
@@ -184,6 +186,8 @@ def main():
     if r.returncode >= 8:
         print(f"robocopy failed ({r.returncode})")
         return 1
+
+    os.makedirs(os.path.join(staging, "data", "savegame"), exist_ok=True)
 
     with open(os.path.join(staging, "Play Olympus 2207.bat"),
               "w", newline="\r\n") as f:
