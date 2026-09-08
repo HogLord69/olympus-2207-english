@@ -10,11 +10,11 @@ patch to an install you already have with `oly_tool.py`.
 
 **42,296 strings across 270 files. No Russian left.**
 
-Plus the half that is not strings: **211 files** of interface art with English
-baked into the pixels, premade characters, cutscene narration, the help screen
-and the mod folders — shipped as `Olympus2207-FE-English-Patch.zip` in
-[Releases](../../releases), 2.4 MB, for anyone who already has the game and
-does not want the 1.7 GB build.
+Plus the half that is not strings: **212 files** of interface art with English
+baked into the pixels, premade characters, cutscene narration, the help screen,
+sfall's own `.ini` messages and the mod folders — shipped as
+`Olympus2207-FE-English-Patch.zip` in [Releases](../../releases), 2.4 MB, for
+anyone who already has the game and does not want the 1.7 GB build.
 
 The art is the official English 1.2 release's, so it is **not committed here** —
 this repository stays text and tooling, same as the others.
@@ -114,6 +114,34 @@ more ids; each block has 700–990 spare.
 
 Pairing by id, by position, and by digits alone were all tried first and all
 fail. The script reports a disagreement rather than guessing past it.
+
+## The Pip-Boy printed `Error` where holodisk names belong
+
+`PIPBOY.MSG` came out of the re-flow with its **label** section re-wrapped to a
+fixed width, which destroyed the line-number to text mapping. Holodisk titles
+406–419 were gone entirely — that is the `Error` — and 400–405 held run-on text
+(`{400}` was *"Jackal's Diary Young's Research War Chronicle"*).
+
+Three stray duplicate entries per disk made it worse. Fallout 2 lets a later
+entry overwrite an earlier one with the same id, so `{N000}` ended up holding
+`**END-DISK**` and every holodisk stopped at its first line.
+
+The whole sub-1000 block is restored from the English build — the id sets below
+1000 are identical between the two, verified before the swap, so nothing the
+Fixed Edition added is lost — and the strays are dropped. All 13 holodisks now
+resolve: title present, body contiguous, `**END-DISK**` terminated.
+
+Auditing every `.msg` the same way turned up **ten more** files whose last block
+had been written onto the wrong ids, which both blanked the working lines and
+left the intended ones missing — `COMBATAI`, `PERK`, `STTEXT`, `NWMARK`,
+`OLMORO`, `SJOSVALD`, `NWSAT`, `RBBELOCH`, `TGRDDEAD`, `TIPTEXT`. In `STTEXT`
+that had silently replaced the guards' *"It's the heretic! KILL HIM!"* with empty
+lines. The translated lines were kept and renumbered onto the ids they were
+written for.
+
+Duplicate ids are not by themselves a defect — six files carry them in both
+upstream builds and are left alone. The check that matters is whether a file is
+**missing** ids the reference builds have.
 
 ## The sfall messages are not .msg files
 

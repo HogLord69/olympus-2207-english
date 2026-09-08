@@ -1,8 +1,9 @@
 # Payload — the non-`.msg` half of the localization
 
-`oly_tool.py` handles dialogue and UI strings. This folder holds everything that
-is **not** a `.msg` string: artwork with text baked into the pixels, premade
-character records, narration files, and two mod folders.
+`oly_tool.py` handles dialogue and UI strings. This folder holds everything the
+pipeline does not reach: artwork with text baked into the pixels, premade
+character records, narration files, two mod folders, sfall's own `.ini`
+messages, and the handful of `.msg` files that had to be repaired by hand.
 
 The tree mirrors the game folder. Copy `payload/` over your install and the
 engine picks it up — `ddraw.ini`'s load order puts loose files under `data/`
@@ -13,7 +14,8 @@ data/premade/          9 files    character names and biographies
 data/art/intrface/   126 files    interface art with English captions
 data/art/inven/        1 file     dagnote.frm
 data/pcx/             11 files    help screen and tip buttons
-data/text/english/    51 files    narration, credits, screen names
+data/text/english/    62 files    narration, credits, screen names, repairs
+sfall/                 2 files    translations.ini and the Key Mod script
 mods/                  2 files    KeysHelp and InventoryFilter
 ```
 
@@ -59,6 +61,24 @@ them itself:
 - `data/pcx/HELPSCRN.PCX` and ten tip buttons — НАЗАД, ЗАКРЫТЬ, ДА, НЕТ, ДАЛЕЕ
   became BACK, CLOSE, YES, NO, NEXT — copied from the English install.
 
+## sfall's own messages
+
+`sfall/translations.ini` is not a `.msg` file, so nothing in the pipeline ever
+read it. It carries the karma messages, the save prompt, poison damage, the
+barter cost label, the party HUD labels and the fourteen unarmed attack names.
+It is fixed by copying Resurrection's English file, verified key-for-key first:
+56 keys, six sections, identical order, and `XltTable` — the codepage map, the
+one value that is not a message — byte-identical between them, so the copy
+changes no behaviour.
+
+Six symptoms reported against v1.1 all trace here and nowhere else: `ОЗ:` where
+HP belongs, `Электро` on the armour class, `Вы теряете N ед. кармы`, the barter
+`Стоимость`, `Сохранение в данный момент невозможно`, and
+`Отдыхать двадцать четыре часа` on the Pip-Boy's 24-hour rest option.
+
+`sfall/scripts/gl_key_mod.int` holds its two F3 messages hardcoded, so they are
+space-padded to the original byte length like the Keys Help strings.
+
 ## Mods
 
 Both are sfall folder-mods, despite the `.dat` names.
@@ -67,6 +87,50 @@ Both are sfall folder-mods, despite the `.dat` names.
   hardcoded in the compiled script, so the English replacements are space-padded
   to the exact original byte length. File size is unchanged.
 - **`InventoryFilter.dat/text/english/game/inventory_filter.msg`** — translated.
+
+## Repaired `.msg` files
+
+Eleven files here are not ports — they are repairs to files the pipeline already
+produced, where a translation tool had re-wrapped or misnumbered a block.
+
+**`PIPBOY.MSG`.** Its label section was re-wrapped to a fixed width, which
+destroyed the line-number to text mapping. Holodisk titles 406–419 were gone
+entirely and 400–405 held run-on text, so the Pip-Boy printed `Error` in the
+DATA column instead of a holodisk name. Three stray duplicate entries per disk
+made it worse: Fallout 2's loader lets a repeated id overwrite the earlier one,
+so each disk's first line became the end-of-disk marker and every disk stopped
+at line one. The whole sub-1000 block is restored from the English build — id
+sets below 1000 are identical between the two, so nothing FE-specific is lost —
+and the strays are dropped. All 13 holodisks now resolve: title present, body
+contiguous, `**END-DISK**` terminated. The alarm clock, movie list and status
+labels were damaged the same way and come back with it.
+
+**Ten more** had their last block written with the wrong line numbers, which
+both blanked the working lines and left the intended ids missing:
+
+    COMBATAI  PERK  STTEXT  NWMARK  OLMORO  SJOSVALD  NWSAT  RBBELOCH
+    TGRDDEAD  TIPTEXT
+
+In `STTEXT.MSG` that silently replaced the guards' `It's the heretic! KILL HIM!`
+with empty lines; in `NWMARK.MSG` three replies shadowed an earlier dialogue node
+and 521–523 came back as `Error`. The translated lines were kept and renumbered
+onto the ids they were written for — only two had no counterpart and were taken
+from the English build.
+
+Duplicate ids are not by themselves a defect: `OLKELLY`, `PRO_SCEN`, `TDUDEDAD`,
+`TCAROL01`, `RBPASTUH` and `NWXBRST` carry them in both upstream builds too, and
+are left alone.
+
+## `dagnote.frm`
+
+The "Note from Douglas" inventory picture, and a 15× size outlier — every other
+inventory image is at most 200×69, this one is 300×322 in the Fixed Edition and
+350×350 in the English build, and the interface bar scales whatever sits in the
+active item slot. v1.1 shipped the English 350×350 and the item was then
+reported as crashing the game when placed in a hand slot. The English artwork is
+now inside FE's own 300×322 frame — trimmed of its transparent margin, scaled
+uniformly, and centred — byte-for-byte the original file size. Unconfirmed as
+the cause; it restores the only geometry this build shipped with.
 
 ## Text
 

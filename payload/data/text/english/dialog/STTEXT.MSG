@@ -1,0 +1,586 @@
+#
+{1}{}{Hero Archetype is "Tank".}
+{2}{}{Hero Archetype is "Fox".}
+{3}{}{Hero Archetype is "Forrest".}
+{4}{}{Hero Archetype is "Standard".}
+{5}{}{}
+{6}{}{}
+{7}{}{}
+{8}{}{}
+{9}{}{}
+#
+#Подключение проводов
+#
+{10}{}{Want to try to manually pick the wire combination? If you fail, you could get an electric shock and the security system will change the electrical circuit!}
+{11}{}{Yes, it's worth a try!}
+{12}{}{No, I don't want to burn my fingers!}
+{13}{}{I don't feel like tinkering with the wires...}
+{14}{}{Well, shucks! I'm not an electrician or cable guy! I think I can manage without it somehow...}
+{15}{}{There are 3 wires in front of you: red, blue, and green. You need to connect two of them. Which ones do you choose?}
+{16}{}{Red and Blue}
+{17}{}{Green and Red}
+{18}{}{Blue and Green}
+{19}{}{Now you need to connect the remaining individual wire to one of the wires in the pair. Which wire do you connect it to?}
+{20}{}{Connect Red to Green}
+{21}{}{Connect Red to Blue}
+{22}{}{Connect Green to Red}
+{23}{}{Connect Green to Blue}
+{24}{}{Connect Blue to Red}
+{25}{}{Connect Blue to Green}
+{26}{}{You felt an electric shock.}
+{27}{}{Oops! You got a charge going through your fingers.}
+{28}{}{You got an electric shock. The finger is still aching.}
+{29}{}{You received a massive electric shock.}
+#
+#
+#
+{30}{}{Bravo! You did it!}
+{31}{}{This is a solid steel door. It cannot be opened with a crowbar or an explosion.}
+{32}{}{You removed the trap from the door.}
+{33}{}{Want to try to manually pick the wire combination? If you are unsuccessful, it will shock you, and the security system will change the layout of the electrical circuit! Otherwise, you will need at least a skill of }
+{34}{}{You've been poking around the wires for a long time, but you still haven't been able to hack the security system. Want to try to manually pick a wire combination? If you fail, you can get an electric shock and the security system will change the layout of the electrical circuit!}
+{35}{}{Your trap has been disarmed and went into the belongings of }
+{36}{}{The door is critically damaged and about to fall apart.}
+{37}{}{The door is badly damaged and barely holds on its hinges.}
+{38}{}{If you want to manually pick the combination, you need to use a screwdriver.}
+{39}{}{You have successfully opened the control panel box.}
+#
+#
+#
+{40}{}{Locked.}
+{41}{}{It is locked.}
+{42}{}{Locked tight.}
+{43}{}{Locked.}
+{44}{}{The door is jammed tight.}
+{45}{}{It seems impossible to open.}
+{46}{}{It's barricaded. Can't open.}
+{47}{}{Doors do not get damaged in combat mode. Exit combat and place explosives at the door.}
+{48}{}{}
+{49}{}{}
+#
+#WC фразы
+#
+{50}{}{OCCUPIED!}
+{51}{}{Can't you see? It's occupied!}
+{52}{}{Leave me alone!}
+{53}{}{Stop bothering me? I'm busy!}
+{54}{}{I-AM-BUSY!!!}
+{55}{}{Get in line!}
+{56}{}{}
+{57}{}{}
+{58}{}{}
+{59}{}{}
+#
+#Глупые попытки использовать черт знает что
+#
+{60}{}{How do you imagine that?}
+{61}{}{Nope, not gonna work.}
+{62}{}{This obviously won't help here.}
+{63}{}{Nothing will happen.}
+{64}{}{This has no use here.}
+{65}{}{You gotta try something else.}
+{66}{}{It is illogical to try to use this here.}
+{67}{}{Nothing good will come of it.}
+{68}{}{You will not succeed this way.}
+{69}{}{Maybe use your finger?}
+#
+#Металлические двери и замки
+#
+{70}{}{Leaning over with your weight and straining every muscle in your body... You still failed to budge the lock.}
+{71}{}{No, looks like this lock won't open just like that. You can't argue with metal!}
+{72}{}{This is an IRON door! Do you really think you're that strong?!}
+{73}{}{Would you like to call for help? You alone will never bend the iron door!}
+{74}{}{You're more likely to break your radial bone, than bend this lock!}
+{75}{}{<<FILL IN>>}
+{76}{}{<<FILL IN>>}
+{77}{}{<<FILL IN>>}
+{78}{}{<<FILL IN>>}
+{79}{}{<<FILL IN>>}
+#
+#Замок сломан, установка ловушек
+#
+{80}{}{The explosion blows the door out completely, it barely keeps on its hinges.}
+{81}{}{The door opens wide with a powerful blast wave, it seems that it is about to break off its hinges.}
+{82}{}{Using all your strength you successfully bend the lock. It doesn't look like it can be repaired.}
+{83}{}{You gripped wrong and strained your muscle. You feel a lot of pain.}
+{84}{}{You put your foot wrong and strained your muscle. You feel a lot of pain.}
+{85}{}{Cursing and spitting, you try to set back the dislocated joint. You succeed, but the pain doesn't go away.}
+{86}{}{You can't set traps on locked doors, it's pointless.}
+{87}{}{You successfully booby-trapped the door. Now wait for the fireworks!}
+{88}{}{The lock is hopelessly broken, this door cannot be locked!}
+{89}{}{The door withstood the blow and did not break.}
+#
+#Работа с дверями и замками
+#
+{90}{}{Because of your crooked hands, the lock is now jammed.}
+{91}{}{Maybe in a few hours you could figure out a way to open the lock, but for now it's jammed.}
+{92}{}{You have no idea how to open this lock.}
+{93}{}{Your thoughts are jammed. The lock too.}
+{94}{}{Before you lock the door, you need to close it.}
+{95}{}{You locked the lock as best as you could.}
+{96}{}{The door is completely destroyed, you can't do anything with it.}
+{97}{}{This door can no longer be used, it is completely broken.}
+{98}{}{Only the hinges and jambs are left of the door, what else do you want to do with it?!}
+{99}{}{It is better not to touch the remains of the poor door, it is already barely holding on its hinges.}
+#
+#звуки дверей, сейфов и т. д. при открывании
+#
+{100}{}{click-click}
+{101}{}{ka-click}
+{102}{}{::something clicks::}
+{103}{}{krrr-trrr-click}
+{104}{}{trrr-krr-click}
+{105}{}{::click::}
+{106}{}{krr-rrr-click}
+{107}{}{krrr-trrr-click}
+{108}{}{::door opens::}
+{109}{}{::opens::}
+#
+#запертые двери, сейфы, ящики
+#
+{110}{}{Nope, locked!}
+{111}{}{Bummer! It's locked.}
+{112}{}{Not so fast, it's locked.}
+{113}{}{You can't just open it. It's locked.}
+{114}{}{Damn, it didn't work...}
+{115}{}{And what did you try to achieve?}
+{116}{}{It doesn't seem like a good idea.}
+{117}{}{No! That won't do!}
+{118}{}{You locked the lock and jammed the door.}
+{119}{}{::Locked::}
+#
+#опять чертовы замки...
+#
+{120}{}{Nope, this lock is too tough for you!}
+{121}{}{No, first you need to practice with simpler locks.}
+{122}{}{It won't work. Your picking skill is not sufficient for this lock.}
+{123}{}{Do you want to open locks without keys? You need to train more on simpler locks.}
+{124}{}{After a careful cursory examination of the lock, you realize that to open it you will need at least a lockpicking skill of }
+{125}{}{...}
+{126}{}{After a brief cursory study of the lock, you realize that you don't understand a damn thing about it.}
+{127}{}{You need to seriously train your dexterity to defeat such a lock.}
+{128}{}{No, you are not strong enough for this kind of vandalism.}
+{129}{}{You lean with your whole body - but you still don't have enough strength to bend the lock. }
+#
+#и опять чертовы замки...
+#
+{130}{}{No matter how skilled you are in lockpicking, this lock will not succumb!}
+{131}{}{Obviously, some specific key is needed here.}
+{132}{}{Neither the crowbar nor the lockpicks will help you. You need a special key here.}
+{133}{}{It won't work. The lock is designed for a special key.}
+{134}{}{After a short tinkering with the lock, you realize that it will only open with a key.}
+{135}{}{No, you need a special key here.}
+{136}{}{You can't open it without the right key.}
+{137}{}{Even with explosives, this lock will not open without "your" key!}
+{138}{}{Any idea where to get the RIGHT KEY?}
+{139}{}{This lock will only open with a key, nothing else will work!}
+#
+#
+#опыт
+#
+{140}{}{You receive }
+{141}{}{You've earned }
+{142}{}{You get }
+{143}{}{Perfect! You get }
+{144}{}{ experience points.}
+#
+#Воровство
+#
+{145}{}{You managed to dig into someone's pockets! }
+{146}{}{You were able to search this character unnoticed! }
+{147}{}{Your nimble hands got into someone's pockets! }
+{148}{}{You deftly slip your hands into someone's pockets! }
+#
+#
+#Батарейки
+#
+{150}{}{Wow! You are now richer by }
+{151}{}{Congratulations! You've got }
+{152}{}{Your pocket is now lined more with additional }
+{153}{}{You are a bit richer, by }
+{154}{}{Happiness is not in Batteries but their quantity! You receive }
+{155}{}{ Batteries!}
+#
+#Ловушки на дверях
+#
+{160}{}{When you try to set a trap on the door, you notice that there is already a trap installed!}
+{161}{}{Why would you do that? Your trap is already set here!}
+{162}{}{While picking around the lock, you rather painfully dislocate your wrist.}
+{163}{}{You seriously pinched your finger by unsuccessfully putting it under the screwdriver.}
+{164}{}{}
+{165}{}{}
+{166}{}{}
+{167}{}{}
+{168}{}{}
+{169}{}{}
+#
+#ловушки на ящиках
+#
+{170}{}{At the last moment, you notice a hidden blade under the lid.}
+{171}{}{You happen to notice a tripwire leading to a trap.}
+{172}{}{The trap goes off!}
+{173}{}{You have successfully disarmed the trap!}
+{174}{}{You've discovered a trap!}
+{175}{}{You don't see anything unusual here.}
+{176}{}{}
+{177}{}{}
+{178}{}{}
+{179}{}{}
+#
+#Кража у криттеров
+#
+{200}{}{You were almost caught red-handed!}
+{201}{}{Not going to happen, you need to train more.}
+{202}{}{Your hands are shaking! Calm down and try again!}
+{203}{}{You were almost noticed! Be careful next time.}
+{204}{}{Your chance of successfully stealing is around }
+{205}{}{%. Worth a try?}
+{206}{}{WE HAVE A DAMN THIEF HERE! GET HIM!!!}
+{207}{}{THINK YOU CAN STEAL FROM ME?}
+{208}{}{DANG! I'M BEING ROBBED!!!}
+{209}{}{YOU THIEVING LITTLE...}
+{210}{}{To try to steal from this trader your skill must be at least }
+{211}{}{ !}
+{212}{}{}
+{213}{}{}
+#
+#Боевые спец сообщения
+#ЯДЫ
+{250}{}{You feel the poison spreading in your body.}
+{251}{}{The poison has seeped into your bloodstream.}
+{252}{}{You feel the effect of the poison.}
+{253}{}{The poisonous injection is causing you great pain.}
+{254}{}{You can clearly feel the burning of the poison.}
+#Травматическое оружие
+{255}{}{ falls backward from unbearable pain.}
+{256}{}{The sharp burning pain drops }
+{257}{}{ to the ground.}
+{258}{}{You can't stand the pain and pass out for a while.}
+{259}{}{You lose consciousness for a while from the severe pain.}
+#Отравленные дротики
+{260}{}{The dart hits you in a vulnerable spot. You can feel the poison pierce your skin.}
+{261}{}{The poisoned dart brings great pain and you are feeling dizzy.}
+{262}{}{The dart delivers a strong dose of poison into your body. You're having a hard time pulling yourself together.}
+{263}{}{The poisoned sting penetrates your skin and the poison is spreading through your bloodstream.}
+{264}{}{The sting of poison causes you great pain.}
+{265}{}{ writhes in pain, feeling the poison from the dart.}
+{266}{}{ twitches after being hit by a poisonous dart.}
+{267}{}{ grabs the affected area, feeling the burn of the poison.}
+#костеломательное оружие
+{268}{}{The incredibly strong recoil breaks the elbow of your right hand!}
+{269}{}{You couldn't control the monstrous recoil of the weapon, and your forearm snapped in half!}
+#
+#Первое посещение карты
+#
+{300}{}{}
+{301}{}{The same technicians roam the same parking lot looking for the same parts.}
+{302}{}{You are awakened by your mother's warm hands.}
+{303}{}{So many years have passed, but almost nothing has changed in Tartarus.}
+{304}{}{After another 4 years, still nothing has changed.}
+{305}{}{The Farms of Tartarus... The humid air is filled with the smell of rotten corn and the fumes of Lavash shit.}
+{306}{}{It seems that every time you visit Farms the air here becomes even more disgusting...}
+{307}{}{The Maintenance Level. A constant noise of water pumping and purification units will never let you fall asleep here.}
+{308}{}{The stench from the Mouth of Hades hits you right in the nose and almost knocks you out.}
+{309}{}{This is Purgatory. In the pitch-black darkness you can smell fear and death.}
+{310}{}{The unbearably bright sunlight hits your eyes, you start to hyperventilate, but soon your senses are clear again.}
+{3010}{}{I need to check this box, maybe there is something interesting there.}
+{311}{}{An old parking lot with piles of twisted metal. You used to love to play here as a child.}
+{312}{}{The old subway branch hits a blockage, but there's a turnoff on the right.}
+{313}{}{An old Subway Station. A dim light illuminates the frail bodies of its inhabitants.}
+{314}{}{Apparently, here used to be the waiting rooms and administration's office of the Subway Station.}
+{315}{}{Among the remains of houses, you can see a passage leading underground.}
+{316}{}{As everywhere else, devastation and destruction reign supreme.}
+{317}{}{The smell of rotting meat is palpable in this old, damp basement.}
+{318}{}{This is quite a bustling and busy place, guarded by armed men. Looks like there's a lot of trading going on.}
+{319}{}{It looks like the Headquarters of the Sunset Jackals. The building is heavily guarded.}
+{320}{}{This place reminds you of the old Tartarus parking lot. The raiders seem to dig around the old junk in search of needed scrap.}
+{321}{}{It's surprisingly lively, with lots of raiders sleeping or wandering around. A good half of them gathered around the ring shouting.}
+{322}{}{There aren't many people here, but everyone is heavily armed. Apparently that building is an old warehouse.}
+{323}{}{This place doesn't look like the buildings outside at all, and from the looks of it, no one has been here in a long time. Strangely, you suddenly feel fear.}
+{324}{}{A basement room that looks more like an old army bunker in case of a nuclear attack.}
+{325}{}{On the opposite side of the plateau you can see the entrance to some kind of cave.}
+{326}{}{It's dark and damp, but it looks like someone made a shelter here.}
+{327}{}{This place is a busy shopping area. The sweet spirit of open market relations feels in the air.}
+{328}{}{The smell of machine oil and raw meat, mixed with an ooze of feces and the aroma of sweat from laboring workers, hits your nose right at the doorway. This is a factory floor.}
+{329}{}{...Another 4 years. You are already 21, but nothing has changed in Tartarus.}
+{330}{}{EXTRA MAP}
+{331}{}{Here and there you see residential tents and dilapidated houses. The ambiance is filled with the constant mooing of Lavash and the buzzing of flies.}
+{332}{}{A huge "LIVOS" sign in big, richly decorated letters, points to the entrance of the cave, near which travelers and merchants jostle.}
+{333}{}{The cave arches are merging with concrete walls, in front of which you see an automatic turret. It immediately locks onto you.}
+{334}{}{The staircase leads you into a network of rooms and corridors. Richly dressed vault dwellers are wandering back and forth.}
+{335}{}{In the poorly lit space of rooms stand incomprehensible machines and devices. Looks like it's some kind of technical area.}
+{336}{}{It is quite dark and humid here. You can hear the splashing of water nearby, the hum of machinery, and some kind of... Grunting?}
+{337}{}{The stale, heavy air immediately takes your breath away. You slowly calm down and let your eyes adjust to the impenetrable darkness.}
+{338}{}{This place looks like the encampment of some raiders or vagrants. Some of the locals are dead drunk or moaning from hunger, others are constantly searching for something.}
+{339}{}{In this part, the settlement looks more vibrant, and it seems that the excitement is associated with a nearby fenced-off square.}
+{340}{}{This is it - your first battle in the Arena! You have to make the best use of your melee skills - and win!}
+{341}{}{Inside the room is a real joint, with alcohol, blackjack, and whores. Drunken men tapping out a tune with their feet and fists, setting the dancers' rhythm.}
+{342}{}{The long corridor seems to end in darkness. You're willing to bet that it's been a long time since anyone has set foot here.}
+{343}{}{At the entrance to the cave, you see bored guards. Probably, they stand there because they are guarding that cave's entrance.}
+{344}{}{In a small passageway ahead, you see a couple of burly savages waving at you.}
+{345}{}{Looks like the settlement is securely sheltered from every direction. You would feel quite at home - if it weren't for that sweet taste in the air...}
+{346}{}{In the pitch blackness of the cave, you can only hear. And you hear sounds that don't promise a pleasant walk.}
+{347}{}{Surprisingly, there is a huge mansion hidden between the rocks! Surely its former owner was very rich and not very hospitable.}
+{348}{}{In the middle of the wasteland stands a lonely shabby hut. A very, very suspicious hut.}
+{349}{}{Almost falling down the last step, you find yourself in a stuffy room, soaked with sweat and alcohol.}
+{350}{}{In front of you lies the main entrance to a fairly large factory, very similar to the one in NWO. Or maybe all factories look the same to you.}
+{351}{}{The air of the workshop is saturated with the smell of rotten rags. The evidence indicating the present of current "tenants" is scattered around.}
+{352}{}{You hear a strange rustling in the basement. As if someone is driving a nail through the stones.}
+{353}{}{There are only mountains around, nothing except mountains...}
+{354}{}{The "City of Wonders" that appears before you look quite disappointing. There are only a couple of walls, mold, and pale cave mushrooms. }
+{355}{}{Rising high into the sky, before you stand the huge skyscraper of Olympus. Menacing Defenders, standing next to the tower, look very insignificant in comparison.}
+{356}{}{The beauty of the interior makes your jaw drop on the floor and lay there for some time.}
+{357}{}{Men and women in white (once white) lab coats scurry back and forth with some kind of flasks and fancy instruments.}
+{358}{}{It is hard to make out what is going on here, but there are just as many people in white coats as on the previous floor.}
+{359}{}{The local staff are running from calculator to calculator with goggling eyes and disheveled hair. They must be busy with something very important and urgent.}
+{360}{}{The fresh, warm air hits you in the face, and the view takes your breath away.}
+{361}{}{This place looks like a high-tech lab. White coats again, but not as much fuss as on the engineering level.}
+{362}{}{The Abode of the Defenders, no other way to call it. You feel like a dwarf next to these mighty warriors.}
+{363}{}{The hum of the transformers here is incredibly loud, and the air is so electrified that you can feel the hair all over your body standing.}
+{364}{}{There is absolutely nothing in this room except an elevator and a HUGE door with a code panel.}
+{365}{}{You boldly step forward.}
+{366}{}{The thickets are surprisingly dense. It's like a suburban forest park or something. But you are sure that the scorpions will find you.}
+{367}{}{You can see paths in the desert, but they are too wide to be trodden by people.}
+{368}{}{In the mountain, you can see a nicely decorated entrance, from where you can hear a soft rumbling sound.}
+{369}{}{The closer you get, the more dizzy and aching your head becomes. There's clearly something wrong with this place!}
+{370}{}{All around is just desert and wasteland.}
+{371}{}{All around is just desert and wasteland.}
+{372}{}{All around is just desert and wasteland.}
+{373}{}{All around is just desert and wasteland.}
+{374}{}{All around is just desert and wasteland.}
+{375}{}{All around is just desert and wasteland.}
+{376}{}{All around is just desert and wasteland.}
+{377}{}{All around is just desert and wasteland.}
+{378}{}{All around is just desert and wasteland.}
+{379}{}{All around is just desert and wasteland.}
+{380}{}{Here and there you can see some vegetation.}
+{381}{}{Here and there you can see some vegetation.}
+{382}{}{Here and there you can see some vegetation.}
+{383}{}{Here and there you can see some vegetation.}
+{384}{}{Here and there you can see some vegetation.}
+{385}{}{Nothing but empty ruins.}
+{386}{}{Nothing but empty ruins.}
+{387}{}{Nothing but empty ruins.}
+{388}{}{Just the bank of a dead river.}
+{389}{}{Just the bank of a dead river.}
+{390}{}{The second floor is laid out with several rooms. Looks like there is someone in one of them.}
+{391}{}{Rocks and stones. And more rocks... and stones too.}
+{392}{}{Rocks and stones. And more rocks... and stones too.}
+{393}{}{Rocks and stones. And more rocks... and stones too.}
+{394}{}{Rocks and stones. And more rocks... and stones too.}
+{395}{}{Rocks and stones. And more rocks... and stones too.}
+{396}{}{Rocks and stones. And more rocks... and stones too.}
+{397}{}{Rocks and stones. And more rocks... and stones too.}
+{398}{}{Only ruins and stones here.}
+{399}{}{Only ruins and stones here.}
+#
+# МЕХАНИЧЕСКАЯ ПАМЯТЬ
+#
+{400}{}{Your skill in Small Guns has increased!}
+{401}{}{Your skill in Big Guns has increased!}
+{402}{}{Your skill in Energy Weapons has increased!}
+{403}{}{Your skill in Unarmed has increased!}
+{404}{}{Your skill in Melee Weapons has increased!}
+{405}{}{Your skill in Throwing has increased!}
+{406}{}{Your skill in First Aid has increased!}
+{407}{}{Your skill in Doctor has increased!}
+{408}{}{Your skill in Sneak has increased!}
+{409}{}{Your skill in Lockpick has increased!}
+{410}{}{Your skill in Steal has increased!}
+{411}{}{Your skill in Traps has increased!}
+{412}{}{Your skill in Science has increased!}
+{413}{}{Your skill in Repair has increased!}
+{414}{}{Your skill in Speech has increased!}
+{415}{}{Your skill in Barter has increased!}
+{416}{}{Your skill in Casanova has increased!}
+{417}{}{Your skill in Outdoorsman has increased!}
+#
+# ПАНЕЛЬ ЛИФТА ОЛИМП
+#
+{420}{}{Welcome to the Master Control Panel}
+{421}{}{of the Olympus 103 Tower Elevator!}
+{422}{}{Sorry, but for using the Elevator}
+{423}{}{you need to insert an Access Card.}
+{424}{}{Goodbye!}
+{425}{}{Access Card: }
+{426}{}{"Biology"}
+{427}{}{"Engineering"}
+{428}{}{"Physics"}
+{429}{}{"X2 Access"}
+{430}{}{"X1 Access"}
+{431}{}{Floor    Name             Access}
+{432}{}{001       The Horton Hotel     }
+{433}{}{031       Biology Laboratories }
+{434}{}{051       Engineering Bureau   }
+{435}{}{063       Physics Laboratories }
+{436}{}{079       Server Room           }
+{437}{}{096       Presentation Room    }
+{438}{}{103       Control Rooms         }
+{439}{}{Floor Nr. }
+{440}{}{YES}
+{441}{}{NO}
+{442}{}{Please enter the 3 digits}
+{443}{}{of the desired floor now.}
+{444}{}{Floor access granted.}
+{445}{}{Floor access denied.}
+{446}{}{The board doesn't work, the power to the floor is turned off.}
+{447}{}{"ATTENTION! YOUR CARD IS BLOCKED!"}
+{448}{}{}
+{449}{}{}
+#
+#Сообщения для окна сообщений
+#
+{800}{}{You don't have an Automap!}
+{801}{}{You don't have an Organizer}
+{802}{}{You cannot enter combat mode!}
+{803}{}{Resolution must be at least 800x600!}
+{804}{}{You received new karma!}
+{805}{}{}
+{806}{}{}
+{807}{}{}
+{808}{}{}
+{809}{}{}
+# Сообщения о влиянии на локацию
+{810}{}{You have greatly influenced the fate of the station's residents!}
+{811}{}{Your actions have significantly affected life in Tartarus!}
+{812}{}{Your actions have greatly influenced the fate of the NWO!}
+{813}{}{Undoubtedly, your actions will have consequences for the residents of Livos!}
+{814}{}{Your actions will obviously change the life of the Jackals a lot!}
+{815}{}{The fate of the Rainbow has changed a lot due to your actions!}
+{816}{}{}
+{817}{}{}
+{818}{}{}
+{819}{}{}
+# Сообщения в мини-дисплее (и для квестов)
+{850}{}{Loading in progress, please, do not remove disk...}
+{851}{}{Disk's content was successfully loaded into an organizer.}
+{852}{}{Code Rejected.}
+{853}{}{Code Accepted.}
+{854}{}{Your radiation exposure has increased by }
+{855}{}{Something painfully bit your finger!}
+{856}{}{Looks like a hungry rat lives there. How can you lure a rat out?...}
+{857}{}{No, the rat will not eat from your hands!}
+{858}{}{Hmm, looks like the rat won't bite.}
+{859}{}{}
+{860}{}{You've found enough mines. Time to tell Fred.}
+{861}{}{It looks like all the Onca Devils are dead, you can tell Christie about it.}
+{862}{}{Something clicks!}
+{863}{}{Looks like your Perception is too low to detect mines. But clearing them with your feet is also a great way.}
+{864}{}{One is done, but there are still few to find around the house.}
+{865}{}{Quite a lot of people are going to come. You need to tell Bono about it.}
+{866}{}{Almost breaking the needle on the thick hide of the monster, you still manage to drive the injection into the unprotected belly of the Chimera!}
+{867}{}{You were irradiated for }
+{868}{}{ Rads!} # тогда может "зиверт или бэр"...
+{869}{}{There is a connector for a 2B chip card on the panel.}
+{870}{}{This card doesn't seem to fit here.}
+{871}{}{Apparently, this door is controlled remotely. It won't simply open for you.}
+{872}{}{Your accumulated radiation level is }
+{873}{}{You can't simply run away from the hunt!}
+{874}{}{You can't steal from this character.}
+{875}{}{}
+{876}{}{}
+{877}{}{}
+{878}{}{}
+{879}{}{}
+#
+#НОВЫЕ КНИГИ
+#
+{880}{}{No, you won't learn anything new from this issue.}
+{881}{}{It seems that books will no longer be able to raise your skill.}
+{882}{}{In this issue, you learned a couple of new tricks on how to convince someone.}
+{883}{}{This issue details the wrist movement technique to make your throw as accurately as possible.}
+{884}{}{Jab, smash, hook, uppercut, and heel to the throat! The comic strips colorfully and clearly demonstrate new ways to break your opponent in half with your bare hands!}
+{885}{}{Your level of intelligence does not allow you to learn from these comics.}
+#
+#Спец сообщения для сюжета
+#
+{900}{}{You can hear your mom calling.}
+{901}{}{You can hear Dr. Pat calling for you.}
+{902}{}{}
+{903}{}{}
+{904}{}{}
+{905}{}{}
+{906}{}{}
+{907}{}{}
+{908}{}{}
+#
+#РАЗГОВОРЫ ПРО РЕНЕССАНС
+#
+{910}{1}{Renaissance, you say? Yes, there are a lot of rumors about this place. Even the last ghoul in the Radius heard that there is a promising RENAISSANCE somewhere nearby, where it is warm, quiet, calm, plenty of food and water... Everyone knows this place exists, but hell, no one, absolutely no one, knows where it is.}
+{911}{}{I see. Thanks for the information.}
+{912}{2}{Renaissance... [grins] Yeah, man, there is such a place, nice and warm. I know a lot of people have been looking for it. They even say someone has found it, but no one has ever seen this "someone" since. I mean, there was one kid who'd been to the Renaissance, but I don't know what happened to him.}
+{913}{}{If somebody was there, then this place really exists. Thanks for that, too.}
+{914}{3}{Ah, so that's what you're up to! There was one just like you - just as inquisitive. But now he is not [chuckles]. The Renaissance is a locked-down secret governmental city. Probably, some presidents or monarchs live there. And people like you will be shot from half a mile on the way to this Renaissance of yours! Mark my words, stop looking for him, or you'll end up badly.}
+{915}{}{Yeah, that sounds dangerous... I guess I need to be more careful.}
+{916}{4}{The city of Eden, yeah... [rolls his eyes] They say it has smart vending machines that give out delicious food, provide light and heat... But, and I know for a fact, this place is very well hidden somewhere in the mountains. It's even surrounded by something that clouds your thoughts. You may not believe it, but a lot of people went looking for it and never came back! There was, however, one boy, who did. And he not only returned but also drew a map of how to find this place. The rumor goes like he divided this map into 4 parts and hid it in different corners of the Radius... Who knows if any of that is true. Maybe there's no such place as Renaissance?}
+{917}{}{A map? With a map, it would be much easier to find it. Of course, if the Renaissance really exists...}
+{918}{}{There's not much I can tell you. It seems that there is something somewhere, but no one knows where and what.}
+{919}{}{Renaissance, Paradise City, Heaven... [winks] I think it's like normal heaven - it doesn't exist.}
+{920}{}{There are many rumors, but no one knows anything specific.}
+{921}{}{Yes, people say different things, so you can choose what to believe and what not...}
+{922}{}{I see.}
+{923}{}{Okay, I see.}
+{924}{}{Well, of course, yes.}
+#
+#Реплики в Тартаре после побега ГГ
+#Слуги
+{930}{}{Herald? I... Me? Yes, yes, of course, I'm already going to do my work! Excuse me.}
+{931}{}{What? No, no, I'm... Just looking for tools. Of course, I will work for the good of the Gods.}
+{932}{}{Yes, of course, just as the Gods say!}
+{933}{}{Warden? I do everything I'm told.}
+{934}{}{I'm... It's just... I'm on my way to work, I have to go.}
+{935}{}{I don't complain, no! Everything is good, I like to serve the Gods.}
+#Детишки
+{936}{}{Herald! Tell me about the Gods!}
+{937}{}{Is it true that there are terrible creatures outside?}
+{938}{}{Mom says this is where we belong. And where is the place for the Gods, Herald?}
+{940}{}{Uuuh, Warden! What a cool armor!}
+{941}{}{Warden, can I touch the armor? At least a little bit?}
+{942}{}{[stands at attention] Reporting! No horrible creatures have been seen under the bed!}
+#Охранники
+{943}{}{Herald? Why aren't you on duty?}
+{944}{}{Don't give me your preaching, okay?}
+{945}{}{You'd better go do your work, no need to hang around here.}
+{946}{}{A scout? What are you doing here? You want a fresh girl, huh?}
+{947}{}{Hey, big military guy, you're bothering me. I'm on duty.}
+{948}{}{You would be more useful in patrolling the outside perimeters.}
+#ГГ запалили в Тартаре после побега
+{950}{}{It's the heretic! KILL HIM!}
+{951}{}{ALARM! Kill the heretic!}
+{952}{}{It's him, that one! GUARDS!}
+{953}{}{You deftly inject the entire dose of serum into a girl's soft tissues!}
+{954}{}{}
+{955}{}{}
+{956}{}{}
+{957}{}{}
+{958}{}{}
+{959}{}{}
+{960}{}{}
+{961}{}{}
+{962}{}{}
+{963}{}{}
+{964}{}{}
+{965}{}{}
+{966}{}{}
+{967}{}{}
+#
+#Стандартные сообщения для окончания диалога
+#
+{1000}{}{[DONE]}
+{1001}{}{[EXIT]}
+{1002}{}{[COMPLETE]}
+{1003}{}{[END]}
+{1004}{}{[ALL]}
+{1005}{}{[LEAVE]}
+{1006}{}{[OK]}
+#
+#Найденные картофельные головы
+#
+{1010}{}{You have found a Mr. Potato! Your Strength is increased by 1!}
+{1011}{}{You have found a Mr. Potato! Your Perception is increased by 1!}
+{1012}{}{You have found a Mr. Potato! Your Endurance is increased by 1!}
+{1013}{}{You have found a Mr. Potato! Your Charisma is increased by 1!}
+{1014}{}{You have found a Mr. Potato! Your Intelligence is increased by 1!}
+{1015}{}{You have found a Mr. Potato! Your Agility is increased by 1!}
+{1016}{}{You have found a Mr. Potato! Your Luck is increased by 1!}
+{968}{}{}

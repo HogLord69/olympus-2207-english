@@ -1,0 +1,1646 @@
+#
+# -----------------------------------------------------------------------------
+#
+# Text labels and messages used in PIPBOY.C
+#
+# (These MUST match "text message" enumeration on the top of PIPBOY.C)
+#
+# -----------------------------------------------------------------------------
+#
+# Special holiday dates
+#
+{100}{}{Happy New Year's Day!}  # New years
+{101}{}{Happy Valentine's Day!}  # April fools
+{102}{}{Happy All Fool's Day!}  # April fools
+{103}{}{Happy Fallout Day!}   # Shipping day!
+{104}{}{Happy Independence Day!} # Independence day
+{105}{}{Happy Revolution Day!}		# Halloween
+{106}{}{Happy Constitution Day!}	# Thanksgiving
+{107}{}{Merry Christmas!}			# X-mas
+#
+# System messages
+#
+{200}{}{MORE}
+{201}{}{BACK}
+{202}{}{STATUS}
+{203}{}{No current tasks.}
+{204}{}{CLUES} # clues gone
+{205}{}{AUTOMAPS}
+{206}{}{VIDEO ARCHIVES}
+{207}{}{DATA}
+{208}{}{}
+{209}{}{}
+{210}{}{Status}
+{211}{}{DATA}
+{212}{}{of}
+{213}{}{Page}
+{214}{}{DONE}
+{215}{}{You cannot rest at this location!}
+#
+# Alarm clock
+#
+{300}{}{ALARM CLOCK}
+{301}{}{Hit Points}
+{302}{}{Rest for ten minutes}
+{303}{}{Rest for thirty minutes}
+{304}{}{Rest for an hour}
+{305}{}{Rest for two hours}
+{306}{}{Rest for three hours}
+{307}{}{Rest for four hours}
+{308}{}{Rest for five hours}
+{309}{}{Rest for six hours}
+{310}{}{Rest until morning (0800)}
+{311}{}{Rest until noon (1200)}
+{312}{}{Rest until evening (1800)}
+{313}{}{Rest until midnight (0000)}
+{314}{}{Rest until healed}
+{315}{}{Rest until party is healed}
+#
+# Holodisk titles
+#
+{400}{}{Jackal's Diary}
+{401}{}{Young's Research}
+{402}{}{War Chronicle}
+{403}{}{Work in Renaissance}
+{404}{}{PD Alloy Research}
+{405}{}{Tartarus Directive}
+{406}{}{Schwein's Notes}
+{407}{}{Olympus Promotion}
+{408}{}{About the Lumeniers}
+{409}{}{Recruit's Diary}
+{410}{}{Equestria}
+{411}{}{Project Renaissance}
+{412}{}{Biolabory #2 Reports}
+{413}{}{Disc 14}
+{414}{}{Disc 15}
+{415}{}{Disc 16}
+{416}{}{Disc 17}
+{417}{}{Disc 18}
+{418}{}{Disc 19}
+{419}{}{Disc 20}
+#
+# Movie archive titles
+# Order must match the list (see gmovie.h)
+#
+{500}{}{Nebesa Games Logo}
+{501}{}{History}
+{502}{}{Introduction}
+{503}{}{10 years later...}
+{504}{}{Escape}
+{505}{}{Surface}
+{506}{}{Main Entrance}
+{507}{}{Service Lift}
+{508}{}{Control Room}
+{509}{}{Epilogue}
+{510}{}{}
+{511}{}{}
+{512}{}{}
+{513}{}{}
+{514}{}{}
+{515}{}{}
+{516}{}{Credits}
+#
+# Things for the Mac version to speak
+#
+#
+{600}{}{Status}
+{601}{}{Clues} # Clues gone
+{602}{}{Automaps}
+{603}{}{Archives}
+{604}{}{Alarm Clock}
+{605}{}{Doo da doo da dum dee dee doodly doo dum dum dum doo da doo da doo da doo da doo da doo da doo}
+{606}{}{Welcome to the Olympus Organizer.}
+{607}{}{So long.}
+{608}{}{Wake up.}
+#
+# Status thread text
+#
+# Format:
+# 0 City name
+# 1 ... 9 thread/quest name
+#
+{700}{}{Vault 13}
+{701}{}{Calm rebel faction.}
+{702}{}{Destroy the Mutant leader.}
+{703}{}{Destroy the source of the Mutants.}
+{704}{}{Find the Water Chip.}
+{705}{}{Find the Water Thief.}
+#
+{710}{}{Buried Vault}
+#
+{720}{}{Shady Sands}
+{721}{}{Cure Jarvis of Radscorpion Poison.}
+{722}{}{Make Poison Antidote.}
+{723}{}{Rescue Tandi from the Raiders.}
+{724}{}{Stop the Radscorpions.}
+#
+{730}{}{Junktown}
+{731}{}{Help Saul.}
+{732}{}{Kill Killian.}
+{733}{}{Rescue Sinthia.}
+{734}{}{Save Trish.}
+{735}{}{Stop Gizmo.}
+{736}{}{Bust the Skulz gang.}
+#
+{740}{}{Raiders}
+#
+{750}{}{Necropolis}
+{751}{}{Destroy the Super Mutants at the Watershed.}
+{752}{}{Fix the Necropolis water pump.}
+#
+{760}{}{Hub}
+{761}{}{Destroy Deathclaw.}
+{762}{}{Dispose of Jain.}
+{763}{}{Dispose of merchant.}
+{764}{}{Find the missing caravans.}
+{765}{}{Steal necklace from the Merchants.}
+#
+{770}{}{Brotherhood}
+{771}{}{Become an Initiate.}
+{772}{}{Rescue Initiate from the Hub.}
+#
+{780}{}{Military Base}
+#
+{790}{}{Glow}
+{791}{}{Disarm Traps for the Facility.}
+{792}{}{Turn on power for the Glow.}
+#
+{800}{}{Boneyard}
+{801}{}{Become a Blade.}
+{802}{}{Deliver Locket for Romero.}
+{803}{}{Deliver package from the Gun Runners.}
+{804}{}{Find Children spy in the Followers.}
+{805}{}{Fix hydroponic farms in Adytum.}
+{806}{}{Rescue Jason Zimmerman.}
+{807}{}{Stop the Gangs from attacking Adytum.}
+#
+{810}{}{Cathedral}
+#
+# Holodisk text
+###########################################################
+# GVAR_DISK_JACKALS_DIARY
+###########################################################
+{1000}{}{March 3, 2151.}
+{1001}{}{Nicole, I've been planning to tell you something}
+{1002}{}{for a long time... Goddamn it! One more try.}
+{1003}{}{Nicole, it's been three months since we settled in}
+{1004}{}{this place, and we still haven't... What the hell?}
+{1005}{}{Nicole? Oh God! No! Ahhhhh!!!! [loud noises, then}
+{1006}{}{another voice comes in] Pussy. Hey, what do we have}
+{1007}{}{here? A souvenir? Huh. What is this but-}
+{1008}{}{**END-PAR**}
+{1009}{}{**END-PAR**}
+{1010}{}{March 4, 2151.}
+{1011}{}{Looks like the thing's on... Jackal speaking. We}
+{1012}{}{are the Jackals, the biggest power in this goddamn}
+{1013}{}{Radius, and if you, unknown bastard, are listening}
+{1014}{}{to this recording, you're probably dead - or about}
+{1015}{}{to be! [hoarse laughter] This military base is now}
+{1016}{}{our new home. This is where we'll settle, where}
+{1017}{}{we'll start building our new empire, the New}
+{1018}{}{Radius. Anyone who stands in our way will be wiped}
+{1019}{}{out, crushed, destroyed like these pussies who}
+{1020}{}{tried not to let us in here! Soon it would be the}
+{1021}{}{turn of the fucking skyscraper... Then we'll live}
+{1022}{}{like kings! Prepare yourselves, you wretches.}
+{1023}{}{**END-PAR**}
+{1024}{}{**END-PAR**}
+{1025}{}{April 12, 2151}
+{1026}{}{It's not so bad here, actually. The vagrants didn't}
+{1027}{}{break through the warehouse door, kindly leaving}
+{1028}{}{all the weapons inside to us. Half the guns are}
+{1029}{}{rusty - that's all right, we'll fix them, and}
+{1030}{}{they'll be as good as new. Dealing with the}
+{1031}{}{machinery is more difficult, we need spare parts...}
+{1032}{}{Tomorrow we're moving to the eastern border, the}
+{1033}{}{ruins should have the hardware we need.}
+{1034}{}{**END-PAR**}
+{1035}{}{**END-PAR**}
+{1036}{}{January 5, 2152}
+{1037}{}{Holy Wasteland! We were seriously battered by these}
+{1038}{}{Olympian "Predators"... 28 brave Jackals went to}
+{1039}{}{Hell tonight! Fucking bastards came in door, but}
+{1040}{}{were so brainless that they didn't even through the}
+{1041}{}{front bother to call for backup! Naive, arrogant}
+{1042}{}{assholes! Maybe their armor gives them a good}
+{1043}{}{protection from radiation and shit, but they didn't}
+{1044}{}{stand any chance against two miniguns! Too bad the}
+{1045}{}{suits are torn to bits, I could use one. Still, the}
+{1046}{}{engines of the three "Predators" turned out to be}
+{1047}{}{intact. Smartie will attach them to the machinery,}
+{1048}{}{and we will be able to mostly replenish our}
+{1049}{}{arsenal. Next time we'll be able to fight back any}
+{1050}{}{asshole coming to us! And, uh, Johnny, my mate...}
+{1051}{}{Rest in peace.}
+{1052}{}{**END-PAR**}
+{1053}{}{**END-PAR**}
+{1054}{}{May 13th, 2153 Of the 8 Jackals sent to the}
+{1055}{}{southern border, only one made it back. The bastard}
+{1056}{}{abandoned his own. A public flogging will amuse the}
+{1057}{}{others... If it wasn't for the info he brought, I'd}
+{1058}{}{have torn his arms off, ripped his belly open and}
+{1059}{}{feed guts to the dogs. 6 Jackals killed, one}
+{1060}{}{captured, and one escaped, that rat... So, the}
+{1061}{}{thing is that there's a fortified facility in the}
+{1062}{}{south part of Radius, the New World Order or}
+{1063}{}{something. They make some kind of canned food out}
+{1064}{}{of mutants. It's not much of a delicacy, but still}
+{1065}{}{edible... And a lot safer than hunting Ursa. Their}
+{1066}{}{guards suck ass, they don't have a lot of guns, and}
+{1067}{}{we could just kill them one by one on the street.}
+{1068}{}{But if they decide to barricade inside the}
+{1069}{}{factory... We need to find the way to lure them}
+{1070}{}{out. In the meantime, let's trade our most rusty}
+{1071}{}{rifles for their food...}
+{1072}{}{**END-PAR**}
+{1073}{}{**END-PAR**}
+{1074}{}{June 26, 2154}
+{1075}{}{Argh... We retreated... Goddamn it, we just fled.}
+{1076}{}{Ten "Defenders" is a fucking invincible army, the}
+{1077}{}{bullets are like flies to them... It's been two}
+{1078}{}{days of walking north into the mountains... And}
+{1079}{}{they don't seem to be after us. I got... I lost my}
+{1080}{}{right hand. I don't even know what kind of guns}
+{1081}{}{they had, but my revolver just exploded, together}
+{1082}{}{with all the meat and bones... Shit... It all took}
+{1083}{}{them about 30 minutes, tops. These bastards were}
+{1084}{}{just having fun killing us. It's a good thing we}
+{1085}{}{managed to get most of the guns out there}
+{1086}{}{beforehand...}
+{1087}{}{**END-PAR**}
+{1088}{}{**END-PAR**}
+{1089}{}{July 02, 2154}
+{1090}{}{There are some ruins here, but a couple of houses}
+{1091}{}{still seem to stand. Half of the Jackals are ran}
+{1092}{}{off with their guns. Ungrateful motherfuckers... We}
+{1093}{}{can't go back for now, need to wait it out...}
+{1094}{}{**END-PAR**}
+{1095}{}{**END-PAR**}
+{1096}{}{May 20, 2164}
+{1097}{}{In the past six months no one has been to base.}
+{1098}{}{Time to come home.}
+{1099}{}{**END-PAR**}
+{1100}{}{**END-PAR**}
+{1101}{}{May 25, 2164}
+{1102}{}{We are finally home! Ten years of living as savages}
+{1103}{}{across the northern border have taught us to}
+{1104}{}{survive in any situations. For example, take that}
+{1105}{}{Ursa, who thought he'd found easy prey! Damn}
+{1106}{}{Ursa... So sick of their meat... The quick}
+{1107}{}{inspection shows nothing good - the only thing left}
+{1108}{}{here is the walls. No generators, no tools. We have}
+{1109}{}{to start everything from scratch...}
+{1110}{}{**END-PAR**}
+{1111}{}{**END-PAR**}
+{1112}{}{May 29, 2164}
+{1113}{}{Sent almost every Jackal on a raid for hardware and}
+{1114}{}{food. Only the guards are here, and a couple of the}
+{1115}{}{stoned ones. Just in time hehehe... Dumb idiots}
+{1116}{}{don't need to know about my find: this base turned}
+{1117}{}{out to be not so simple! In the toilet by the}
+{1118}{}{barracks I found a hidden panel in the floor. Looks}
+{1119}{}{like it leads to some kind of an underground}
+{1120}{}{laboratory or a vault, like the one in my room.}
+{1121}{}{There should surely be enough stuff which the handy}
+{1122}{}{Stevie can use to hack together the equipment for}
+{1123}{}{repairing our guns, and when there's enough of us,}
+{1124}{}{Olympus will finally fall before our power!}
+{1125}{}{**END-DISK**}
+{2000}{}{Researching the anti-radiation painkiller drug.}
+{2001}{}{...}
+{2002}{}{September 30, 2183}
+{2003}{}{Although radiation is visibly dropping in the most}
+{2004}{}{known areas of Radius, and Seekers don't die as}
+{2005}{}{quickly, there is a demand for developing a new}
+{2006}{}{drug to help them on long-range missions. The most}
+{2007}{}{sensible thing to do would be to try to synthesize}
+{2008}{}{something with the properties of a painkiller, a}
+{2009}{}{stimulant and a radiation-removing agent.}
+{2010}{}{Obviously, the experiments should begin with an in-}
+{2011}{}{depth study of the properties of the pre-war}
+{2012}{}{"RadOut" drug. Fortunately, quite a few documents}
+{2013}{}{on Rainbow Pharmaceuticals are still readable.}
+{2014}{}{Well, let's get started.}
+{2015}{}{**END-PAR**}
+{2016}{}{**END-PAR**}
+{2017}{}{December 26, 2183}
+{2018}{}{For many days and nights now, I'm unsuccessfully}
+{2019}{}{trying to find out the base "RadOut" component. The}
+{2020}{}{formula described in the factory documents is}
+{2021}{}{purely synthetic, it doesn't tell me anything. So,}
+{2022}{}{the only available option left is to study the}
+{2023}{}{wildlife that developed resistance to the}
+{2024}{}{radiation. Let's start with the scorpions.}
+{2025}{}{**END-PAR**}
+{2026}{}{**END-PAR**}
+{2027}{}{May 12, 2184}
+{2028}{}{Yes! There's no doubt that the secretions of ant}
+{2029}{}{lions have a powerful rad-extracting properties.}
+{2030}{}{After a special pressurized treatment, of course. A}
+{2031}{}{shame I had so much time wasted on studying}
+{2032}{}{scorpions, but that's beside the point. Now, let's}
+{2033}{}{begin our experiments!}
+{2034}{}{**END-PAR**}
+{2035}{}{**END-PAR**}
+{2036}{}{July 13, 2184}
+{2037}{}{The test subjects are reacting extremely poorly to}
+{2038}{}{the effects of the "Drop". That's the name I gave}
+{2039}{}{the drug. They show all the signs of severe}
+{2040}{}{intoxication, and there have already been two}
+{2041}{}{lethal cases... No one wants to try my medication}
+{2042}{}{willingly. There's a chance I'll have to resort to}
+{2043}{}{self-testing... But this is for later. For now, I}
+{2044}{}{need to find an antidote to formic acid...}
+{2045}{}{**END-PAR**}
+{2046}{}{**END-PAR**}
+{2047}{}{December 01, 2184}
+{2048}{}{That's it! I found it! Scorpion venom perfectly}
+{2049}{}{neutralizes formic acid! I should proceed to the}
+{2050}{}{experiments, fast! Hmm... Actually, one of our}
+{2051}{}{recently returned Seekers shows severe signs of}
+{2052}{}{anemia. How convenient.}
+{2053}{}{**END-PAR**}
+{2054}{}{**END-PAR**}
+{2055}{}{January 05, 2185}
+{2056}{}{Everything is going great. Ben is recovering, he}
+{2057}{}{feels better every minute, taking one "Drop" a day.}
+{2058}{}{He seems a little more irritable, but the}
+{2059}{}{improvement of his health condition is evident!}
+{2060}{}{Time to start the production!}
+{2061}{}{**END-PAR**}
+{2062}{}{**END-PAR**}
+{2063}{}{January 07, 2185}
+{2064}{}{Something's wrong... The dramatic improvement of}
+{2065}{}{Ben's well-being was followed by an even sharper}
+{2066}{}{decline in his... uh... mental stability. He's}
+{2067}{}{acting like an animal, wheezing, snapping, and this}
+{2068}{}{morning he tried to chew his own arm off... Maybe}
+{2069}{}{it's because of his body properties - he's a ghoul}
+{2070}{}{after all. Or maybe he took too big of a dose. Now}
+{2071}{}{I'm sure that no one's would want to volunteer on}
+{2072}{}{testing the drug. I have to adjust the ratio of}
+{2073}{}{ingredients in the compound, and prepare for}
+{2074}{}{testing the chemical on myself...}
+{2075}{}{**END-PAR**}
+{2076}{}{**END-PAR**}
+{2077}{}{January 12, 2185}
+{2078}{}{No one liked him anyway. And why bury a dead guy}
+{2079}{}{into the ground when you can feed him to our ant}
+{2080}{}{lions? I need them alive for experiments... There}
+{2081}{}{are only three of them left, so I made a decision}
+{2082}{}{not to change the drug's composition. I have a}
+{2083}{}{theory that Ben died because of some peculiarities}
+{2084}{}{of his ghoul body. As soon as the ants are done}
+{2085}{}{with him and gain some weight, I'll make more}
+{2086}{}{"Drop". Going to try it out.}
+{2087}{}{**END-PAR**}
+{2088}{}{**END-PAR**}
+{2089}{}{January 15, 2185}
+{2090}{}{Oooh... Mmmm... Hehehey! Yeahhhhhh...}
+{2091}{}{**END-PAR**}
+{2092}{}{**END-PAR**}
+{2093}{}{January 16, 2185}
+{2094}{}{That... was... wonderful... I think I've seen the}
+{2095}{}{gods of the wasteland... I know, I know it sounds}
+{2096}{}{crazy, but it was so... real! The "Drop" took my}
+{2097}{}{mind to some other world, a perfect world... I need}
+{2098}{}{to make... more...}
+{2099}{}{**END-PAR**}
+{2100}{}{**END-PAR**}
+{2101}{}{January 26, 2185}
+{2102}{}{It's a monstrous drug. I can say it, but I can't}
+{2103}{}{make myself realize it... The "Drop" has many}
+{2104}{}{powerful effects, but the strongest one is, without}
+{2105}{}{any doubt, the worst kind of addiction. I have no}
+{2106}{}{ant lions left, so I need to send our Seekers to}
+{2107}{}{get some. I think I'll give them a sample of my}
+{2108}{}{drug, so they wouldn't ask too many questions...}
+{2109}{}{**END-PAR**}
+{2110}{}{**END-PAR**}
+{2111}{}{January 30, 2185}
+{2112}{}{My body is twisting immensely! God!!! The bastard}
+{2113}{}{ripped out my freshly-made supply and devoured it}
+{2114}{}{in an instant! Serves him right... His human body}
+{2115}{}{surrendered almost immediately - he literally spat}
+{2116}{}{out his bloody guts. I think the drug has this}
+{2117}{}{severe effect because... It's because I made the}
+{2118}{}{"Drop" out of the ants that ate Ben... And I got}
+{2119}{}{five more ants... Hungry fucking ants...}
+{2120}{}{**END-PAR**}
+{2121}{}{**END-PAR**}
+{2122}{}{February 03, 2185}
+{2123}{}{Phew... Well, it wasn't that hard. I just had to}
+{2124}{}{pretend that the ghoul wanted to eat my newborn}
+{2125}{}{baby girl. I'm a scientist, after all, and he's a}
+{2126}{}{ghoul. Nobody believes ghouls. But my... my hunch}
+{2127}{}{was confirmed completely: eating the ghoul's flesh}
+{2128}{}{makes the ant lions produce another, different kind}
+{2129}{}{of formic acid! And that acid is... It is... It is}
+{2130}{}{the new, delightful world of the "Drop"!}
+{2131}{}{**END-DISK**}
+{3000}{}{-GLOBAL-LEAKS.INF- "What Do We Know?"}
+{3001}{}{...}
+{3002}{}{September 13, 2010}
+{3003}{}{The last oil deposits remain in the United}
+{3004}{}{Republic of Iran. Iran begins to develop uranium}
+{3005}{}{enrichment program. Great States ambassadors are}
+{3006}{}{deported from Iranian territory.}
+{3007}{}{...}
+{3008}{}{September 15, 2010}
+{3009}{}{The GSA convenes the 1st anti-Iranian G-8 summit}
+{3010}{}{demanding to reinstate the presence of GSA}
+{3011}{}{ambassadors on Iranian territory and cancel the}
+{3012}{}{Iranian enriched uranium program. The United}
+{3013}{}{Empire of Russia categorically opposes the GSA's}
+{3014}{}{policy, citing the necessity of Iranian research}
+{3015}{}{to build a nuclear power plant network in}
+{3016}{}{cooperation with the UER.}
+{3017}{}{...}
+{3018}{}{April 8, 2011}
+{3019}{}{GSA signs a treaty with Poland to establish a}
+{3020}{}{military base for the PATRIOT missile defense}
+{3021}{}{system on Poland's southeastern border,}
+{3022}{}{motivating it with security principles against}
+{3023}{}{possible nuclear aggression from Iran.}
+{3024}{}{...}
+{3025}{}{April 12, 2011}
+{3026}{}{UER's diplomatic representative in ALLIANCE}
+{3027}{}{recalls the need to comply with the START-II}
+{3028}{}{treaty on the point of reduction by the GSA of}
+{3029}{}{its strategic nuclear reserves and demands the}
+{3030}{}{presence of UER observers on the territory of the}
+{3031}{}{GSA. A spokesman for the GSA cites bureaucratic}
+{3032}{}{formalities in delaying compliance with "START-}
+{3033}{}{II".}
+{3034}{}{...}
+{3035}{}{July 30, 2011}
+{3036}{}{North Korea publicly claims a successful test of}
+{3037}{}{an intercontinental ballistic missile.}
+{3038}{}{...}
+{3039}{}{August 3, 2011}
+{3040}{}{South Korea's representative to ALLIANCE demands}
+{3041}{}{strong measures against North Korea and the}
+{3042}{}{presence of ALLIANCE peacekeepers in North Korean}
+{3043}{}{territory. The command of the GSA Navy orders the}
+{3044}{}{deployment of a fleet of missile carriers and}
+{3045}{}{patrol ships off the coast of North Korea, as}
+{3046}{}{does the command of the GSA Marines deploying the}
+{3047}{}{2nd Infantry Division on South Korean territory.}
+{3048}{}{...}
+{3049}{}{Aug. 7, 2011 China conducts a large-scale nuclear}
+{3050}{}{exercise with a potential enemy located in the}
+{3051}{}{American continent.}
+{3052}{}{...}
+{3053}{}{September 18, 2011}
+{3054}{}{UER announces the military usage of a new T-M2}
+{3055}{}{mobile missile system.}
+{3056}{}{...}
+{3057}{}{November 30, 2011}
+{3058}{}{GSA's CIA Intelligence reports that Iran has}
+{3059}{}{successfully completed uranium enrichment}
+{3060}{}{research program.}
+{3061}{}{...}
+{3062}{}{December 3, 2011}
+{3063}{}{The GSA convenes the 2nd anti-Iranian G-8 summit}
+{3064}{}{demanding the complete shutdown of Iran's}
+{3065}{}{intercontinental ballistic missile program. The}
+{3066}{}{UER is vehemently opposed, motivated by the}
+{3067}{}{desire of the GSA to establish total control over}
+{3068}{}{Iranian territory and thus over the last oil}
+{3069}{}{deposits.}
+{3070}{}{...}
+{3071}{}{February 23, 2012}
+{3072}{}{UER together with Chinese forces holds the}
+{3073}{}{largest ever military exercise West-East based on}
+{3074}{}{a nuclear war scenario. Three groups of}
+{3075}{}{"Shark"-class submarines are deployed in the}
+{3076}{}{Japanese Sea, the Arctic Ocean and near the coast}
+{3077}{}{of Greenland. Likewise, 4 "Black Jack" bombers}
+{3078}{}{begin cruising along the eastern border of the}
+{3079}{}{UER.}
+{3080}{}{...}
+{3081}{}{March 1, 2012}
+{3082}{}{UER and China declare a success of a military}
+{3083}{}{exercise and the complete surrender of a}
+{3084}{}{potential enemy.}
+{3085}{}{...}
+{3086}{}{March 5, 2012}
+{3087}{}{At a special ALLIANCE meeting, the GSA addresses}
+{3088}{}{the UER diplomatic representative, demanding the}
+{3089}{}{"Shark" submarines to return to the docks. UER}
+{3090}{}{cites delays in complying with orders and for the}
+{3091}{}{second time reminds the GSA of its demands to}
+{3092}{}{comply with the "START-II" agreement.}
+{3093}{}{...}
+{3094}{}{March 7, 2012}
+{3095}{}{UER's GRU Intelligence reports on increased GSA's}
+{3096}{}{military presence on Poland's territory.}
+{3097}{}{...}
+{3098}{}{May 8, 2012}
+{3099}{}{CIA Intelligence reports about the sale of 4}
+{3100}{}{nuclear warheads by the UER to North Korea.}
+{3101}{}{...}
+{3102}{}{June 20, 2012}
+{3103}{}{The GSA agrees to comply with the "START-II"}
+{3104}{}{condition on nuclear reserves, but demands the}
+{3105}{}{complete elimination of Iran's missile complex.}
+{3106}{}{...}
+{3107}{}{June 22, 2012}
+{3108}{}{The Iranian government imposes a State of}
+{3109}{}{Emergency on Iranian territory.}
+{3110}{}{...}
+{3111}{}{August 12, 2012}
+{3112}{}{UER rejects GSA's conditions for the elimination}
+{3113}{}{of Iran's missile reserves and declares the}
+{3114}{}{"START-II" treaty terminated due to the GSA}
+{3115}{}{failing to meet its obligations.}
+{3116}{}{...}
+{3117}{}{November 16, 2012}
+{3118}{}{UER demands from the GSA to withdraw the missile}
+{3119}{}{defense system in Poland. The GSA cites the}
+{3120}{}{impossibility of meeting this demand due to the}
+{3121}{}{nuclear threat from Iran.}
+{3122}{}{...}
+{3123}{}{December 27, 2012}
+{3124}{}{Information about China's nuclear capabilities is}
+{3125}{}{publically released, which is equal to}
+{3126}{}{approximately 57% of the UER's and 31.5% of the}
+{3127}{}{GSA's.}
+{3128}{}{...}
+{3129}{}{Jan 1, 2013 GSA declares "smart" nuclear weapons}
+{3130}{}{program a national priority.}
+{3131}{}{...}
+{3132}{}{Jan. 30, 2013 UER announces ground-breaking}
+{3133}{}{scientific discoveries in nano-developments for}
+{3134}{}{the military industry.}
+{3135}{}{...}
+{3136}{}{February 5, 2013}
+{3137}{}{UER announces the success of a national}
+{3138}{}{government project at the "Celestial Technologies}
+{3139}{}{Research Institute" about combining}
+{3140}{}{nanotechnology and virology to create a cure for}
+{3141}{}{AIDS and cancer. The nano-biorobots grown from}
+{3142}{}{stem cells are called "Light Matter."}
+{3143}{}{...}
+{3144}{}{February 14, 2013}
+{3145}{}{CIA Intelligence reports on Iran's purchase of}
+{3146}{}{Nuclear Shield missile defense systems from UER.}
+{3147}{}{...}
+{3148}{}{March 20, 2013}
+{3149}{}{By direct orders from the GSA, ALLIANCE}
+{3150}{}{peacekeepers invade Iran without the approval of}
+{3151}{}{ALLIANCE member countries.}
+{3152}{}{...}
+{3153}{}{March 28, 2013}
+{3154}{}{North Korea strikes a nuclear missile at GSA's}
+{3155}{}{military ships off its coast, and invades South}
+{3156}{}{Korea. The 2nd GSA Infantry Division in South}
+{3157}{}{Korea reports surrendering.}
+{3158}{}{...}
+{3159}{}{March 30, 2013}
+{3160}{}{GSA launches a nuclear strike against suspected}
+{3161}{}{Korean silo-based nuclear missiles in close}
+{3162}{}{proximity to China. A huge radioactive cloud}
+{3163}{}{covers the northeastern part of the People's}
+{3164}{}{Republic of China. At the Central Research}
+{3165}{}{Institute "Celestial Technologies", in full}
+{3166}{}{secrecy, Professor of "Russian Science Academy"}
+{3167}{}{Konstantin Anatolyevich Korotkin reprograms Light}
+{3168}{}{Matter into "Dark Matter" - nano-bio weapons for}
+{3169}{}{the destruction of enemy manpower. UER offers}
+{3170}{}{China "Dark Matter" weapon in exchange for}
+{3171}{}{joining forces in the fight against Western}
+{3172}{}{capitalists. China accepts the terms.}
+{3173}{}{...}
+{3174}{}{April 1, 2013}
+{3175}{}{UER and China mobilize their nuclear}
+{3176}{}{capabilities. China demands huge sums of money}
+{3177}{}{from the GSA to counter the radioactive}
+{3178}{}{contamination in its territory, or to "lease"}
+{3179}{}{Alaska until the complete decontamination of}
+{3180}{}{China's radiated areas. At the same time, China}
+{3181}{}{orders the purchase of six "Black Jacks" with}
+{3182}{}{nuclear missiles.}
+{3183}{}{...}
+{3184}{}{April 4, 2013}
+{3185}{}{The GSA, ravaged by the arms race of recent}
+{3186}{}{years, is unable to pay China the damages,}
+{3187}{}{neither it is ready to surrenders Alaska to}
+{3188}{}{China. Negotiations are at an impasse. At the}
+{3189}{}{emergency ALLIANCE meeting,the GSA forbids the}
+{3190}{}{UER to sell "Black Jacks" to China. UER denies}
+{3191}{}{the very existence of such an order from China.}
+{3192}{}{...}
+{3193}{}{April 6, 2013}
+{3194}{}{The GSA State Department recalls the GSA}
+{3195}{}{ambassador from UER "for consultations" and the}
+{3196}{}{White House head addresses the nation. The UER}
+{3197}{}{responds by removing all the GSA embassy staff}
+{3198}{}{from the country.}
+{3199}{}{...}
+{3200}{}{April 10, 2013}
+{3201}{}{Russian "Shark" submarines approach the shores of}
+{3202}{}{the GSA.}
+{3203}{}{...}
+{3204}{}{April 14, 2013}
+{3205}{}{The GSA mobilizes its nuclear missiles and B2}
+{3206}{}{bombers. The UER launches eight "Black Jack"}
+{3207}{}{strategic bombers with non-nuclear cruise}
+{3208}{}{missiles on board to suppress the GSA air and}
+{3209}{}{missile defense systems, and then proceeds with a}
+{3210}{}{"limited strike" against the GSA base in Poland}
+{3211}{}{and GSA territory using four land- and sea-based}
+{3212}{}{nuclear ballistic missiles. At the same time,}
+{3213}{}{three additional "Little Jack" bombers, are}
+{3214}{}{launching conventional missiles at "Elson" Air}
+{3215}{}{Force Base, as well as at Canadian Air Force}
+{3216}{}{headquarters and "Cold Lake" Canadian Air Force}
+{3217}{}{Base. Two nuclear ballistic missiles launched by}
+{3218}{}{Russia fail, but the remaining two hit the "Mount}
+{3219}{}{Cheyenne" and Raven Rock bunkers.}
+{3220}{}{...}
+{3221}{}{April 15, 2013}
+{3222}{}{France and British Empire mobilize their nuclear}
+{3223}{}{submarines and send them to the White Sea}
+{3224}{}{borders.}
+{3225}{}{...}
+{3226}{}{April 16, 2013}
+{3227}{}{GSA launches a nuclear strike on UER territory.}
+{3228}{}{The sabotage causes the Moscow Nuclear Shield to}
+{3229}{}{function at 47% capacity, and one missile hits}
+{3230}{}{the outskirts of Moscow. The government is}
+{3231}{}{urgently evacuated. War is declared between the}
+{3232}{}{UER and the GSA.}
+{3233}{}{...}
+{3234}{}{April 17, 2013}
+{3235}{}{China and Iran side with the UER and declare war}
+{3236}{}{on the GSA.}
+{3237}{}{...}
+{3238}{}{April 18, 2013}
+{3239}{}{France withdraws from ALLIANCE, recalls its}
+{3240}{}{submarines and declares its neutrality. British}
+{3241}{}{Empire sides with the GSA and declares war on the}
+{3242}{}{UER and its allies. Exchanges of "limited nuclear}
+{3243}{}{strikes" against military structures continue.}
+{3244}{}{China, with the help of the purchased "Black}
+{3245}{}{Jacks", launches the first and only strategic}
+{3246}{}{missile "Lord Mao" with "Dark Matter" to the}
+{3247}{}{"Silicon Valley" of the GSA. The plan was to}
+{3248}{}{destroy the human presence in the area while}
+{3249}{}{leaving the technology intact, but the missile}
+{3250}{}{was shot down by GSA missile defense as early as}
+{3251}{}{12,000 meters, leading to "Dark Matter" spreading}
+{3252}{}{across much of the west coast region without}
+{3253}{}{causing much damage to the GSA's vital forces.}
+{3254}{}{...}
+{3255}{}{April 19, 2013}
+{3256}{}{Venezuela sides with the UER.}
+{3257}{}{...}
+{3258}{}{April 20, 2013}
+{3259}{}{Fearing further expansion of the UER alliance,}
+{3260}{}{the GSA wipes Venezuela off the map. A huge}
+{3261}{}{nuclear cloud covers all of South America.}
+{3262}{}{...}
+{3263}{}{April 27, 2013}
+{3264}{}{UER and China synchronously unleash most of their}
+{3265}{}{nuclear capabilites on major GSA cities (New}
+{3266}{}{York, Los Angeles, Las Vegas, Detroit, Chicago)}
+{3267}{}{and military bases.}
+{3268}{}{...}
+{3269}{}{April 28, 2013}
+{3270}{}{British Empire and GSA "B2" bombers launch a}
+{3271}{}{massive nuclear strike against the major cities}
+{3272}{}{of the UER and China. **END-DISK**.}
+{3273}{}{**END-DISK**}
+{4000}{}{November 3, 2012}
+{4001}{}{<SUB: To Command HQ. Classified.>}
+{4002}{}{For Project Renaissance, a suitable rocky}
+{4003}{}{terrain in a sparsely populated area of the}
+{4004}{}{Valley has been chosen. The area is filled}
+{4005}{}{with surveillance cameras and consciousness}
+{4006}{}{suppressors all around the perimeter. The}
+{4007}{}{facility is maintained in security and secrecy.}
+{4008}{}{-Military Observer, Lt. Cameron Douglas}
+{4009}{}{**END-PAR**}
+{4010}{}{**END-PAR**}
+{4011}{}{}
+{4012}{}{December 5, 2012}
+{4013}{}{<SUB: To Command HQ. Classified. Urgent.>}
+{4014}{}{Workers and engineers have gone on strike over}
+{4015}{}{delayed wage payments. Please, increase funding}
+{4016}{}{or the project will be on the verge of failure.}
+{4017}{}{-Military Observer, Lt. Cameron Douglas}
+{4018}{}{**END-PAR**}
+{4019}{}{**END-PAR**}
+{4020}{}{}
+{4021}{}{December 10, 2012}
+{4022}{}{<SUB: To Command HQ. Classified.>}
+{4023}{}{The decision to replace the workers with}
+{4024}{}{Robotrons is paying off: the work is}
+{4025}{}{progressing much faster, and the original}
+{4026}{}{schedule is being followed. The remaining}
+{4027}{}{human staff is "taken care of". In order}
+{4028}{}{to avoid possible delays, please assign}
+{4029}{}{info-programmers to double-check Robotron}
+{4030}{}{work directives.}
+{4031}{}{-Military Observer, Captain Steve Jacobs}
+{4032}{}{**END-PAR**}
+{4033}{}{**END-PAR**}
+{4034}{}{}
+{4035}{}{January 21, 2013}
+{4036}{}{<SUB: Military High Command. Classified.>}
+{4037}{}{Garry, I don't understand why we have to}
+{4038}{}{spend money on this info-programmer.}
+{4039}{}{I was at Renaissance yesterday and that}
+{4040}{}{idiot never got off his ass in 30 minutes.}
+{4041}{}{He was just scrolling links on the GlobalNet.}
+{4042}{}{Let's fire this lazy moron, and split}
+{4043}{}{his pay. And there's the thing with this}
+{4044}{}{lieutenant, Douglas... He's a helpful}
+{4045}{}{man, we need to cheer him up.}
+{4046}{}{-Josh}
+{4047}{}{**END-PAR**}
+{4048}{}{**END-PAR**}
+{4049}{}{}
+{4050}{}{March 15, 2013}
+{4051}{}{<SUB: Military High Command. Classified.>}
+{4052}{}{Josh, Garry, it's getting hot overseas.}
+{4053}{}{The Russians are about to fire their}
+{4054}{}{missiles at us, and you know I have a family!}
+{4055}{}{Martha, my wife, is an excellent barbecue cook,}
+{4056}{}{and Tom and Hank, my boys, are very bright and}
+{4057}{}{handy. Why put the useless family of some old}
+{4058}{}{government bureaucrat in the Renaissance? Please}
+{4059}{}{reconsider the list of residents and put the}
+{4060}{}{Douglas family in instead of, say, the Patterson}
+{4061}{}{family (he's been poking into our "business").}
+{4062}{}{-Military Observer, Lt. Cameron Douglas}
+{4063}{}{**END-PAR**}
+{4064}{}{**END-PAR**}
+{4065}{}{}
+{4066}{}{March 28, 2013}
+{4067}{}{<SUB: Military High Command. Classified. Urgent.>}
+{4068}{}{It has begun. The Koreans are already bombing}
+{4069}{}{our fleet, and all Renaissance has is a}
+{4070}{}{partially complete communications system. And}
+{4071}{}{there's obviously something wrong with those}
+{4072}{}{Robotrons. Sometimes they stand still for}
+{4073}{}{five minutes before they do something.}
+{4074}{}{Maybe we shouldn't have fired that programmer...}
+{4075}{}{Anyway, we need 18 more Robotrons to finish}
+{4076}{}{Renaissance in the next 3 months! How about}
+{4077}{}{making a request to NCASTR HQ? I remember}
+{4078}{}{they owe you for that operation in Dubai...}
+{4079}{}{-Military Observer, Lt. Cameron Douglas}
+{4080}{}{}
+{4081}{}{**END-DISK**}
+{5000}{}{Date: October 23, 2011}
+{5001}{}{Subject: Research Proposal From: John Newell, Tin}
+{5002}{}{Industries RD To: NCASTR.Security@globalnet.inf}
+{5003}{}{"I've given your proposal a lot of thought. And}
+{5004}{}{considered all the associated costs of meeting}
+{5005}{}{your requests. You must understand that a}
+{5006}{}{personal use of the lab is almost impossible! I}
+{5007}{}{can bribe 2 or 3 lab assistants, send a couple}
+{5008}{}{more on vacation or transfer them to other}
+{5009}{}{positions, but your research needs at least ten}
+{5010}{}{people to pull it off! All in all, I need $50,000}
+{5011}{}{and a couple of months to start."}
+{5012}{}{...}
+{5013}{}{Date: October 27, 2011}
+{5014}{}{Subject: Getting Started From: John Newell, Tin}
+{5015}{}{Industries RD To: NCASTR.Security@globalnet.inf}
+{5016}{}{"I have received the funding, so I'm starting the}
+{5017}{}{experiments. But I think I got the initial}
+{5018}{}{calculations wrong somewhere and now I find it}
+{5019}{}{hard to believe that I will be able to get the}
+{5020}{}{metal with the desired properties... No, I'm not}
+{5021}{}{asking for additional funds, it's just - the}
+{5022}{}{first experiments have yielded absolutely no}
+{5023}{}{results, so please, prepare to wait."}
+{5024}{}{...}
+{5025}{}{Date: December 07, 2011}
+{5026}{}{Subject: URGENT!!! From: John Newel, Tin}
+{5027}{}{Industries RD To: NCASTR.Security@globalnet.inf}
+{5028}{}{"One of my assistant got back from vacation. He}
+{5029}{}{immediately started asking everyone what is that}
+{5030}{}{"Power Defence" material we are developing here.}
+{5031}{}{He threatened to tell the general manager. I}
+{5032}{}{tried to convince him that he could get a nice}
+{5033}{}{raise for his silence, and help with the work,}
+{5034}{}{but the cheeky guy asked for 20,000! So far I've}
+{5035}{}{agreed, he'll be waiting for me with the money on}
+{5036}{}{December 09 at 11:00 pm, in the lab's backyard...}
+{5037}{}{Please, wire me the said amount as soon as}
+{5038}{}{possible."}
+{5039}{}{...}
+{5040}{}{Date: December 08, 2011}
+{5041}{}{Subject: FW: URGENT!!! From: John Newel, Tin}
+{5042}{}{Industries RD To: NCASTR.Security@globalnet.inf}
+{5043}{}{"I still haven't received 20,000."}
+{5044}{}{...}
+{5045}{}{Date: December 08, 2011}
+{5046}{}{Subject: FW: FW: Urgent!!! From: John Newell, Tin}
+{5047}{}{Industries RD To: NCASTR.Security@globalnet.inf}
+{5048}{}{"Do you realize that he might tell the general}
+{5049}{}{and then not only "Power Defense", but all your}
+{5050}{}{other "military stuff" would come out!? Please}
+{5051}{}{transfer the funds to me as soon as possible!"}
+{5052}{}{...}
+{5053}{}{Date: December 10, 2011}
+{5054}{}{Subject: Continuing work From: John Newell, Tin}
+{5055}{}{Industries RD To: NCASTR.Security@globalnet.inf}
+{5056}{}{"They say that young man suddenly lost his mind}
+{5057}{}{and ended up being put in a mental institution. I}
+{5058}{}{don't want to know what you did to him, but he}
+{5059}{}{was still a valuable employee... Anyway, we}
+{5060}{}{continue at a steady pace: The first positive}
+{5061}{}{results for viscosity and stopping power have}
+{5062}{}{been obtained. We are proceeding on to the}
+{5063}{}{reducing weight phase."}
+{5064}{}{...}
+{5065}{}{Date: January 31, 2012}
+{5066}{}{Subject: We're getting closer! From: John Newel,}
+{5067}{}{Tin Industries RD To:}
+{5068}{}{NCASTR.Security@globalnet.inf "By applying the}
+{5069}{}{properties of the electromagnetic field of Earth,}
+{5070}{}{we have been able to reduce the specific weight}
+{5071}{}{of PD by 32%, and it looks like it is not the}
+{5072}{}{end! Just think, how much benefit this material}
+{5073}{}{could bring to mankind! Please, consider}
+{5074}{}{publishing the results of the study! PS: I remind}
+{5075}{}{you that I still haven't received my January}
+{5076}{}{subsiding..."}
+{5077}{}{...}
+{5078}{}{Date: February 27, 2012}
+{5079}{}{Subject: 42% less than original From: John Newel,}
+{5080}{}{Tin Industries RD To:}
+{5081}{}{NCASTR.Security@globalnet.inf "This seems to be}
+{5082}{}{the limit... We're a couple of percent short of}
+{5083}{}{the weight reduction you asked for, but otherwise}
+{5084}{}{the material meets the required performance.}
+{5085}{}{Since you so categorically deny the possibility}
+{5086}{}{of publishing the study, can you at least tell}
+{5087}{}{me, for what purposes you need such material? Do}
+{5088}{}{you want to build a flying tank or something? PS:}
+{5089}{}{Have you decided not to pay me at all?"}
+{5090}{}{...}
+{5091}{}{Date: March 04, 2012}
+{5092}{}{Subject: Contract termination From: John Newell,}
+{5093}{}{Tin Industries RD To:}
+{5094}{}{NCASTR.Security@globalnet.inf "I spoke to my}
+{5095}{}{colleague at "Ultimate Defence Systems" - you}
+{5096}{}{stole their research! And by using PD metal in}
+{5097}{}{the "AS-2000", you just want to drive their}
+{5098}{}{company into bankruptcy in a competitive race!}
+{5099}{}{This is unfair, unjust and illegal! I'm going to}
+{5100}{}{publish the research data, and the PD will}
+{5101}{}{benefit the world, instead of making your fat}
+{5102}{}{asses rich!"}
+{5103}{}{**END-DISK**}
+{6000}{}{To all police and military personnel:}
+{6001}{}{ 1) Do not let anyone leave the basement of the}
+{6002}{}{skyscraper. If someone tries to break through,}
+{6003}{}{they are to be shot on sight.}
+{6004}{}{ 2) Destroy all official references to the past}
+{6005}{}{in the basement: textbooks, newspapers, CDs.}
+{6006}{}{ 3) Assign the guards and wardens to each floor}
+{6007}{}{of the basement. The guards and wardens are}
+{6008}{}{forbidden to communicate with the residents,}
+{6009}{}{and under no circumstances are the words}
+{6010}{}{"skyscraper", "basement", "slave" should be used.}
+{6011}{}{The basement is to be called only "Tartarus".}
+{6012}{}{ 4) Assign psychologists to the position of}
+{6013}{}{Heralds on each of the floors. Heralds are}
+{6014}{}{responsible for organizing servants into a three}
+{6015}{}{castes: Life Servants - for the farming duties}
+{6016}{}{and cattle breeding; Technology Servants - for}
+{6017}{}{maintaining and repair the equipment; and Water}
+{6018}{}{Servants - to operate the water purification}
+{6019}{}{units on the lower floor.}
+{6020}{}{ 5) After two generations of Servants, spread}
+{6021}{}{the information that the outside world no}
+{6022}{}{longer exists, and they are all alive only}
+{6023}{}{thanks to the Gods of Olympus. <link>}
+{6024}{}{ 6) Create and spread between the resident of}
+{6025}{}{the basement a new kind of religion, according}
+{6026}{}{to which they are mere servants of the "will}
+{6027}{}{of the Gods." <link>}
+{6028}{}{**END-PAR**}
+{6029}{}{To all personnel of the Biological Research}
+{6030}{}{Department:}
+{6031}{}{ 1) Ensure the production of medicine for}
+{6032}{}{the inhabitants of the basement. Be responsible}
+{6033}{}{for the residents' ability to function.}
+{6034}{}{2) Ensure that pregnant women are taken to}
+{6035}{}{room 25K to give birth. Use psychotropic drugs}
+{6036}{}{to disable their consciousness before leaving}
+{6037}{}{the basement. Do not allow any of the residents}
+{6038}{}{to see or hear anything outside the basement.}
+{6039}{}{**END-PAR**}
+{6040}{}{**END-PAR**}
+{6041}{}{To all technical staff:}
+{6042}{}{ 1) Provide training for two generations of the}
+{6043}{}{Technology Servants caste.}
+{6044}{}{ 2) Develop a device to process organic material}
+{6045}{}{(skin, bones, cartilage, muscle tissue) into}
+{6046}{}{compost. Install the device on the lowest floor}
+{6047}{}{of the basement.}
+{6048}{}{ 4) Dead Servants are to be recycled. Rebels -}
+{6049}{}{to be recycled. If there is a population surplus}
+{6050}{}{or food/water shortage, part of the basement's}
+{6051}{}{population - to be recycled.}
+{6052}{}{**END-PAR**}
+{6053}{}{**END-PAR**}
+{6054}{}{REMINDER:}
+{6055}{}{There are cameras and turrets built into the}
+{6056}{}{walls of Olympus. If you attempt to harm the}
+{6057}{}{skyscraper or fail to comply with the directives}
+{6058}{}{above - you will be destroyed.}
+{6059}{}{    -Head of NCASTR, Ron Anderson}
+{6060}{}{        -May 8, 2013}
+{6061}{}{**END-DISK**}
+{7000}{}{March 29, 2013}
+{7001}{}{This is it - every member of the 4 families is}
+{7002}{}{inside, the gates are sealed. Phew... Just as I}
+{7003}{}{suspected, getting into the vault wasn't that easy.}
+{7004}{}{A lot of people outside are having their asses}
+{7005}{}{burning, and after last night's fireworks by the}
+{7006}{}{chinks, every ragamuffin decided to try to save his}
+{7007}{}{sorry soul in our... in MY vault. It's good that my}
+{7008}{}{loyal guards cleared the way to the gate. I wish we}
+{7009}{}{could have brought Tim and Rob here too, but}
+{7010}{}{there's not enough room, and we don't need}
+{7011}{}{guards... unless to defend us against the}
+{7012}{}{hysterical Duntons, but I think I will be able to}
+{7013}{}{handle them with my Slugger, if necessary. All}
+{7014}{}{that's left to do now is to observe the unfolding}
+{7015}{}{events through the GlobalNet...}
+{7016}{}{**END-PAR**}
+{7017}{}{**END-PAR**}
+{7018}{}{April 16, 2013}
+{7019}{}{War. Probably the last one in the history of}
+{7020}{}{mankind... If it weren't for nuclear missiles I}
+{7021}{}{could make good money on arms dealing, but now...}
+{7022}{}{What's the point in selling weapons and trying to}
+{7023}{}{make a profit if everything that's left on a planet}
+{7024}{}{in a month is going to be a couple of bacteria and}
+{7025}{}{three Inuits in the far north? Although, even those}
+{7026}{}{are unlikely to make it; the Russian Empire and the}
+{7027}{}{Great States will turn each other's allies to dust}
+{7028}{}{first, and then themselves... and China with}
+{7029}{}{Britain will help them with that. This is... This}
+{7030}{}{is the end. I'll go check if the life support}
+{7031}{}{machines are operating smoothly.}
+{7032}{}{**END-PAR**}
+{7033}{}{**END-PAR**}
+{7034}{}{April 18, 2013}
+{7035}{}{The refugees broke through the outer cave door. If}
+{7036}{}{it was not for the turret, they would probably be}
+{7037}{}{here by now. Do I feel sorry for them? Pfft! Ha!}
+{7038}{}{They are just biological mechanisms, trying to}
+{7039}{}{maintain their functionality. They even lack the}
+{7040}{}{mind, because if they had one, they would have}
+{7041}{}{realized back in 2009 that war is inevitable, and}
+{7042}{}{they need a personal refuge. And by breaking into}
+{7043}{}{our sealed environment, not only would they die}
+{7044}{}{anyway, but they would also ruin humanity's most}
+{7045}{}{valuable minds! MY most valuable mind! Meatbags...}
+{7046}{}{Let the rats have one last feast.}
+{7047}{}{**END-PAR**}
+{7048}{}{**END-PAR**}
+{7049}{}{April 27, 2013}
+{7050}{}{GlobalNet, already working like shit, has been}
+{7051}{}{completely shut down. Half of the surveillance}
+{7052}{}{sensors outside are down too, the other half is}
+{7053}{}{indicating that it's simply impossible to survive}
+{7054}{}{in the hell there. In 3 days there were 3 nuclear}
+{7055}{}{attacks on our area. Hope they won't cause rifts...}
+{7056}{}{We can only assume that the radiation will not}
+{7057}{}{reach our groundwater. I should let the others know}
+{7058}{}{that we are the last people on Earth. The McKinseys}
+{7059}{}{will probably be happy to hear it.}
+{7060}{}{**END-PAR**}
+{7061}{}{**END-PAR**}
+{7062}{}{June 05, 2013}
+{7063}{}{The level of radiation outside is only rising, the}
+{7064}{}{temperature is half the normal in summer. Leaving}
+{7065}{}{the vault is out of the question in the next 5-6}
+{7066}{}{years... Why didn't I bring the suit of}
+{7067}{}{Environmental Armor from NCASTR?... Screw it, at}
+{7068}{}{least now I have time to continue the research of}
+{7069}{}{my laser's combat capabilities. Because who knows}
+{7070}{}{what creatures we'll encounter outside...}
+{7071}{}{**END-PAR**}
+{7072}{}{**END-PAR**}
+{7073}{}{October 12, 2017}
+{7074}{}{Huh, it's my old journal... What has changed in the}
+{7075}{}{last 4 years? Nothing. It's only getting worse}
+{7076}{}{outside and I can't even take a guess when we'll be}
+{7077}{}{able to open the vault. Maybe never... The Hortons}
+{7078}{}{are acting a little strange, saying that we all}
+{7079}{}{need to "be fruitful and multiply" so that humanity}
+{7080}{}{would have a better chance of survival. They must}
+{7081}{}{have forgotten that Alice Horton has already had}
+{7082}{}{seven abortions for the last two years, and the}
+{7083}{}{vault is not designed for such "multiplying"...}
+{7084}{}{Maybe the next time she has an abortion, she should}
+{7085}{}{be sterilized...}
+{7086}{}{**END-PAR**}
+{7087}{}{**END-PAR**}
+{7088}{}{October 15, 2017}
+{7089}{}{These Hortons are getting more unbearable with each}
+{7090}{}{day! They think they own the place! Who cares if}
+{7091}{}{their furniture and paintings are around the vault?}
+{7092}{}{This isn't your hotel! And no one gave you the}
+{7093}{}{right to order the Schweins. This vault is my}
+{7094}{}{creation! I'm the one who gave it a new life! I}
+{7095}{}{invested time and money in it! It's my machines}
+{7096}{}{that provide us with food, water, and clothing!}
+{7097}{}{Unthinkable! They're worse than the Duntons! At}
+{7098}{}{least the McKinseys were helpful providing fundings}
+{7099}{}{from their oil reserves to supply the project with}
+{7100}{}{labor and building materials. We need to show both}
+{7101}{}{these crazy families their place...}
+{7102}{}{**END-PAR**}
+{7103}{}{**END-PAR**}
+{7104}{}{January 03, 2026}
+{7105}{}{The diary again... Yes, she should have been}
+{7106}{}{sterilized. She's given birth 4 times already!}
+{7107}{}{There are too many of us here, the food is not}
+{7108}{}{enough for everyone, I'm getting sick all the time,}
+{7109}{}{my concentration is broken, and Julia Dunton's}
+{7110}{}{hourly tantrums only stir the pot. I'd murder her}
+{7111}{}{if we didn't need her for the diversity of genetic}
+{7112}{}{material. Only Oliver, my little genius boy, brings}
+{7113}{}{me joy. He is barely 21 - but he already}
+{7114}{}{discovering new ways of concentrating energy! This}
+{7115}{}{will help me greatly in developing my laser.}
+{7116}{}{**END-PAR**}
+{7117}{}{**END-PAR**}
+{7118}{}{May 27, 2031}
+{7119}{}{I... I feel weak... For the fifth day in a row I}
+{7120}{}{can't get out of bed... If I had known before that}
+{7121}{}{I would never see the sunlight again! But it's even}
+{7122}{}{worse for Christian, my grandson... seems like he}
+{7123}{}{will never see the sky at all... What's the point}
+{7124}{}{in such an existence? Only the thought of the}
+{7125}{}{complete extinction of humanity prevents us from}
+{7126}{}{drunken suicide. But my hour is at hand... Oliver,}
+{7127}{}{now you're in charge. I hope you will finish our}
+{7128}{}{laser gun, maybe Christian could someday find some}
+{7129}{}{use to it...}
+{7130}{}{**END-DISK**}
+{8000}{}{Attention! Attention!}
+{8001}{}{**END-PAR**}
+{8002}{}{**END-PAR**}
+{8003}{}{On 15 April 2012, the 5th Annual American}
+{8004}{}{Science Show Exhibition "NCASTR & You!"}
+{8005}{}{will be held. Among the state-of-the-art}
+{8006}{}{achievements in the fields of technogenetics,}
+{8007}{}{wave science, and infology, you will be able}
+{8008}{}{to see with your own eyes such cutting-edge}
+{8009}{}{science innovations as:}
+{8010}{}{- A tiny infotransmitter that fits in the}
+{8011}{}{frame of your glasses. You can even try it}
+{8012}{}{in action! *}
+{8013}{}{- A miniature infowave amplifier that you can}
+{8014}{}{wear on your keychain and take with you to work.}
+{8015}{}{- The latest Robotron model, capable to}
+{8016}{}{understand human speech and act accordingly.}
+{8017}{}{Just like alive! Your child will definitely}
+{8018}{}{like it!}
+{8019}{}{And to conclude the exhibition - a private}
+{8020}{}{presentation of the latest Mechanized Combat}
+{8021}{}{Total Defense Armor: MCA "Defender"! The main}
+{8022}{}{pride and flagship of NCASTR corporation! **}
+{8023}{}{}
+{8024}{}{We remind you that April 15, 2012 is a unique}
+{8025}{}{opportunity to spend an unforgettable day for}
+{8026}{}{you and your children! ***}
+{8027}{}{}
+{8028}{}{* Surgery required. Terms and conditions are on}
+{8029}{}{the admission ticket.}
+{8030}{}{** For Military High Command, level AA or higher.}
+{8031}{}{*** Tickets are sold at the "Horton Hotel" lobby.}
+{8032}{}{Hotel admission = $4.30. Transfer to the Olympus}
+{8033}{}{is conducted via the west Subway line.}
+{8034}{}{**END-DISK**}
+{9000}{}{Date of entry: July 03, 2207 How nice of these}
+{9001}{}{brave warriors to give me medicine, weapon, and}
+{9002}{}{this wonderful disc-o-phone! It is a fifth week}
+{9003}{}{of my journey to get to the Olympus... There were}
+{9004}{}{four of us when we learned of the tower from one}
+{9005}{}{Ghoul. God, what a blessing it was - to know that}
+{9006}{}{somewhere in the world exist a place without all}
+{9007}{}{the dangers, terrible beasts... And even more}
+{9008}{}{terrible men! We walked for days, moving to the}
+{9009}{}{west, toward the center of the valley... Then we}
+{9010}{}{were ambushed by a Chimera. It was hell! The}
+{9011}{}{monster ripped Bob in half in a matter of seconds}
+{9012}{}{and then jumped to Cindy. I was running, but}
+{9013}{}{could still hear her dying screams and that}
+{9014}{}{hungry, inhuman roar... Those horrible sounds are}
+{9015}{}{still ringing in my head. We continued to walk -}
+{9016}{}{me and my dad, just the two of us. We no longer}
+{9017}{}{made bonfires at night. One afternoon, when}
+{9018}{}{everything around seemed very peaceful, my dad}
+{9019}{}{suddenly fell knee-deep in the sand. I jumped}
+{9020}{}{away, tried to find some kind of a stick to pull}
+{9021}{}{him out - but with no avail. Then he started}
+{9022}{}{screaming... Screaming so loud... And then the}
+{9023}{}{ants came... A dozen of them... Oh, God... They}
+{9024}{}{just tore dad to pieces... I think I fainted. I}
+{9025}{}{woke up in the arms of warriors in golden armor!}
+{9026}{}{We were in some cave... They must have dragged me}
+{9027}{}{away while I was unconscious. I'm afraid to even}
+{9028}{}{imagine what would have happened to me, if not}
+{9029}{}{for these brave warriors. For the first time in a}
+{9030}{}{while, I feel really safe. And very lucky. They}
+{9031}{}{allowed me to join them while they patrol the}
+{9032}{}{area. We're moving out at dawn!}
+{9033}{}{**END-PAR**}
+{9034}{}{**END-PAR**}
+{9035}{}{Date of entry: July 09, 2207 Phew, it was a rough}
+{9036}{}{day... We must have walked a thousand miles, I}
+{9037}{}{almost can't feel my feet! But, more importantly,}
+{9038}{}{with them I'm safe. They call themselves "the}
+{9039}{}{Lumeniers", it means something akin to "light-}
+{9040}{}{bearers". They fight the evil and injustice all}
+{9041}{}{over these lands! And they said that Olympus is}
+{9042}{}{the heart of all evil. There is no salvation}
+{9043}{}{there, only death... Well, seems like I've lost}
+{9044}{}{one hope, but found another - these brave}
+{9045}{}{knights! God, I'm so sleepy...}
+{9046}{}{**END-PAR**}
+{9047}{}{**END-PAR**}
+{9048}{}{Date of entry: July 12, 2207 I was told that the}
+{9049}{}{"crusade" usually lasts for about a week, and if}
+{9050}{}{during that time I can prove my loyalty to their}
+{9051}{}{ideals, they'll take me to the House of Light,}
+{9052}{}{where I can undergo initiation to join them in}
+{9053}{}{serving the Good! I'm so excited! I want to}
+{9054}{}{become one of them so much, but they don't tell}
+{9055}{}{me how exactly I should "prove my loyalty..."}
+{9056}{}{Still, I'm willing to do anything!}
+{9057}{}{**END-PAR**}
+{9058}{}{**END-PAR**}
+{9059}{}{Date of entry: July 13, 2207 In a few minutes we}
+{9060}{}{are going into battle with the bandits... I'm so}
+{9061}{}{scared... They're all wearing armor, practically}
+{9062}{}{invulnerable, and I'm completely defenseless,}
+{9063}{}{with only radiation pills and a couple of "Surge"}
+{9064}{}{injections... I don't want to die like this...}
+{9065}{}{...}
+{9066}{}{Date of entry: July 13, 2207 We chased them all}
+{9067}{}{the way down to Death Valley! no one is left}
+{9068}{}{alive! But it had its price... One of the}
+{9069}{}{Lumeniers was following the last of these two}
+{9070}{}{raiders when they ran farther into the Valley...}
+{9071}{}{Now I know why it has a name like this! There's}
+{9072}{}{some kind of vapor there, that their angelic}
+{9073}{}{golden lumenier armor can't protect against. In}
+{9074}{}{the end he killed them, but never made it back. I}
+{9075}{}{saw him falling down, convulsing. But the good}
+{9076}{}{thing is this - they said I can take his place}
+{9077}{}{and wear his armor! When I pass my initiation, I}
+{9078}{}{will be given a special suit that should keep me}
+{9079}{}{safe from deadly fumes, and I will go and take}
+{9080}{}{the armor from the Valley. There is only one day}
+{9081}{}{of the crusade left. soon I will become one of}
+{9082}{}{them. I will mark the coordinates of the Valley}
+{9083}{}{here, just in case...}
+{9084}{}{**END-PAR**}
+{9085}{}{**END-PAR**}
+{9086}{}{Date of entry: July 15, 2207 They are monsters!}
+{9087}{}{MONSTERS! Oh my God, I will never be able to}
+{9088}{}{sleep at night again... The last task, as they}
+{9089}{}{said, would be the easiest and the most important}
+{9090}{}{one - to destroy the evil before it gets}
+{9091}{}{strong... But... They were just kids! When I saw}
+{9092}{}{who we were after, I couldn't believe we were}
+{9093}{}{going to do it! Five kids, not older than 9, with}
+{9094}{}{homemade guns and rifles! What harm could they do}
+{9095}{}{to anyone!? But no, "it is the seed of evil, it}
+{9096}{}{must be destroyed!", they said! God, how they}
+{9097}{}{screamed... When those bastards thought all the}
+{9098}{}{kids were killed, and were about to leave, I came}
+{9099}{}{closer to the bodies. One girl only pretended to}
+{9100}{}{be dead... I just couldn't... We ran like we had}
+{9101}{}{probably never run before! They shot at us, but}
+{9102}{}{we somehow got away. Now, here I am, at Rainbow}
+{9103}{}{Raiders. Not much good here, but I'd rather work}
+{9104}{}{as a stripper and eat garbage than will be}
+{9105}{}{killing children, whoever they are...}
+{9106}{}{**END-DISK**}
+{10000}{}{Day 1. 19:17}
+{10001}{}{Tomorrow is the first day of my new life!}
+{10002}{}{I finally finished my training and tomorrow}
+{10003}{}{is my first day of work. So I decided to make}
+{10004}{}{a new diary, which I will take with me to the}
+{10005}{}{barracks. And I'm going to leave the old one}
+{10006}{}{with my old toys and things in the deposit}
+{10007}{}{locker. I'm looking forward to tomorrow, and}
+{10008}{}{I don't think I'll be able to sleep tonight.}
+{10009}{}{Hello, my new life!}
+{10010}{}{**END-PAR**}
+{10011}{}{**END-PAR**}
+{10012}{}{Day 2. 9:32}
+{10013}{}{My new armor is great! Now Jock will at last}
+{10014}{}{stop bullying me. We're equal in rank, I'm}
+{10015}{}{no longer some green-horned cadet. I want}
+{10016}{}{to see his face when he recognizes me as an}
+{10017}{}{equal. It was worth tolerating his harrassment}
+{10018}{}{and abuse until this moment. And Kelly is}
+{10019}{}{going to be crazy about my uniform!}
+{10020}{}{**END-PAR**}
+{10021}{}{Day 2. 12:06}
+{10022}{}{Jock gloated even more than before. I don't}
+{10023}{}{understand. What does he want? We do the same}
+{10024}{}{thing now, look the same, and he's still mocking}
+{10025}{}{me! Should I tell the captain about it? Jock}
+{10026}{}{SHOULD start to respect me.}
+{10027}{}{Also, this strange "ritual of initiation" to}
+{10028}{}{become a guard worries me. Why didn't I hear of}
+{10029}{}{it before? Looks very strange. I expected a}
+{10030}{}{little different from my first day on duty.}
+{10031}{}{**END-PAR**}
+{10032}{}{**END-PAR**}
+{10033}{}{Day 3. 10:52}
+{10034}{}{I hate that asshole Jock! He came up with the}
+{10035}{}{whole stupid thing! No one else has ever been}
+{10036}{}{initiated before! They tied me to the wall,}
+{10037}{}{covered me in Lavash shit, and left me to hang}
+{10038}{}{all night! What kind of idiotic joke is that?}
+{10039}{}{The shift was also two hours late. I had to}
+{10040}{}{report to the captain about the lack of incidents}
+{10041}{}{during the night while looking like this.}
+{10042}{}{The captain yelled so hard... And then he ordered}
+{10043}{}{me five more additional shifts!}
+{10044}{}{And Jock was never punished.}
+{10045}{}{**END-PAR**}
+{10046}{}{**END-PAR**}
+{10047}{}{Day 4. 6:43}
+{10048}{}{First good news this week! I had a scheduled}
+{10049}{}{meeting with Kelly, my future wife. We spent}
+{10050}{}{20 more minutes together than last time. Our}
+{10051}{}{wedding is scheduled for eleven months. And}
+{10052}{}{maybe I'll be allowed to go to her medical floor}
+{10053}{}{and see what it's like on the floor above my own.}
+{10054}{}{**END-PAR**}
+{10055}{}{**END-PAR**}
+{10056}{}{Day 5 20:14}
+{10057}{}{Today we guarded Tartarus Farms. What a stench!}
+{10058}{}{I felt sick twice, couldn't even eat my rations.}
+{10059}{}{Those mindless worms (Life Servants, as they're}
+{10060}{}{called) are digging through waste and shit like}
+{10061}{}{insects. At least Jock left me alone here, when}
+{10062}{}{he turned his attention to the Servants. They}
+{10063}{}{had so much from him! I refused to participate}
+{10064}{}{in beatings - didn't want to get my uniform dirty.}
+{10065}{}{**END-PAR**}
+{10066}{}{**END-PAR**}
+{10067}{}{Day 6 11:41}
+{10068}{}{Jock and his friends finally accepted me into}
+{10069}{}{their ranks! And have told me about their plans.}
+{10070}{}{They are planning to get drunk on shift,}
+{10071}{}{not letting the captain know. And they invited}
+{10072}{}{me to join. In exchange, I have to go down to}
+{10073}{}{Purgatory and bring their stash of moonshine.}
+{10074}{}{Ha, this is my first real dangerous assignment!}
+{10075}{}{**END-PAR**}
+{10076}{}{Day 6 13:05}
+{10077}{}{Damn, it's more dangerous here in the caves than}
+{10078}{}{I thought! When I was looking for this moonshine}
+{10079}{}{stash, they spotted me. Four Ferals. They chased}
+{10080}{}{me, one of them even bit my hand. I wasted all}
+{10081}{}{my bullets... I think I got one really good.}
+{10082}{}{Then I hid in some room. They were banging on}
+{10083}{}{the door, and when I couldn't hold them anymore,}
+{10084}{}{something clicked - and the door got locked.}
+{10085}{}{Ferals are still scrambling outside, but at least}
+{10086}{}{I can rest and bandage my arm, waiting for help.}
+{10087}{}{Soon Jock and the boys will become worried and}
+{10088}{}{come looking for me.}
+{10089}{}{**END-PAR**}
+{10090}{}{Day 6, 15:29}
+{10091}{}{I'm still sitting in this room. The Ferals are}
+{10092}{}{already gone. Where's Jock? They should have}
+{10093}{}{started looking for me by now.}
+{10094}{}{**END-PAR**}
+{10095}{}{**END-PAR**}
+{10096}{}{Day 7 8:16}
+{10097}{}{I can't open this damn door! I got to get out of}
+{10098}{}{here. I have no ammo left, or I'd shot a whole}
+{10099}{}{clip into the lock. I could run away from Ferals}
+{10100}{}{even without bullets anyway. Why isn't Jock}
+{10101}{}{looking for me?}
+{10102}{}{**END-PAR**}
+{10103}{}{**END-PAR**}
+{10104}{}{Day 8 10:46}
+{10105}{}{The lock won't budge. I don't have any of the}
+{10106}{}{tools to help me open it. There's only one food}
+{10107}{}{ration left. Guys, I'm begging you, get me out of}
+{10108}{}{here!}
+{10109}{}{**END-PAR**}
+{10110}{}{**END-PAR**}
+{10111}{}{Day 9 9:13}
+{10112}{}{I'm weakened... Even the Ferals don't respond}
+{10113}{}{to my pounding and screaming anymore. My}
+{10114}{}{fingers are all scratched from me trying to}
+{10115}{}{open the door. I am desperate. None of the guys}
+{10116}{}{are coming for me. Why didn't the captain send}
+{10117}{}{a search squad? Why didn't Jock do anything}
+{10118}{}{about it?}
+{10119}{}{**END-PAR**}
+{10120}{}{Day 9 18:56}
+{10121}{}{That bastard set this whole thing up! I knew that}
+{10122}{}{Jock was a scumbag, and I didn't believe it! Why}
+{10123}{}{did they make me a guard? I've always been}
+{10124}{}{interested in plants, I could have been a great}
+{10125}{}{biologist! And how lucky I was to be assigned to}
+{10126}{}{such bride... Beautiful Kelly from the Biology}
+{10127}{}{level! Everyone knows that the prettiest girls are}
+{10128}{}{from there. The calculations showed that our kids}
+{10129}{}{would be healthy and smart. Perhaps they would have}
+{10130}{}{made it to the very top of Olympus...}
+{10131}{}{**END-PAR**}
+{10132}{}{**END-PAR**}
+{10133}{}{Day 10 2:37}
+{10134}{}{I have no food or water left. The wound on my arm}
+{10135}{}{itches unbearably. I can hardly move my fingers.}
+{10136}{}{My head hurts so bad. My only regret is that I}
+{10137}{}{didn't leave myself a single bullet.}
+{10138}{}{**END-PAR**}
+{10139}{}{**END-PAR**}
+{10140}{}{Day 11 12:12}
+{10141}{}{This is my last entry. I often get unconscious...}
+{10142}{}{It's harder and harder to open my eyes.}
+{10143}{}{Kelly... If you find this tape, know that the four}
+{10144}{}{times when we met were the most beautiful things}
+{10145}{}{I've ever had in my life. I leave to you my payment}
+{10146}{}{for 10 days. Goodbye.}
+{10147}{}{Jock, you motherfucker. I wish you were dead.}
+{10148}{}{**END-DISK**}
+{11000}{}{...ter Four: Perspective}
+{11001}{}{}
+{11002}{}{I don't know why it took an interest in you,}
+{11003}{}{but I'd be careful. It's never helped anyone}
+{11004}{}{before.}
+{11005}{}{}
+{11006}{}{Stupid!}
+{11007}{}{}
+{11008}{}{A blast of lightning fired past me, shattering an}
+{11009}{}{old clock at the back of the overview office I}
+{11010}{}{was cowering in. The Wasteland Survival}
+{11011}{}{Guide was full of all sorts of helpful}
+{11012}{}{tips. Scavenging guides. A whole chapter on}
+{11013}{}{mines. And more! And then there were the}
+{11014}{}{not-so-helpful ones. After having read the}
+{11015}{}{chapter on "Making Pre-War Earth Pony}
+{11016}{}{Technology Work For You", my first thought}
+{11017}{}{when I came across the ruins of Ironshod}
+{11018}{}{Firearms was to take a peek inside and see if}
+{11019}{}{there was any technology I could make work}
+{11020}{}{for me.}
+{11021}{}{}
+{11022}{}{Instead, I got myself trapped in a maze full of}
+{11023}{}{ponicidal robots and automated turrets, fleeing}
+{11024}{}{until I managed to back myself into a corner}
+{11025}{}{here in an office box high above the factory}
+{11026}{}{floor. Almost out of ammo. If I hadn't found}
+{11027}{}{that medical box in the employee bathroom, I}
+{11028}{}{would have died trying to get across the second}
+{11029}{}{floor.}
+{11030}{}{}
+{11031}{}{How could I possibly have been so very stupid?}
+{11032}{}{}
+{11033}{}{Below, three of those robots were rolling about,}
+{11034}{}{looking for me. They were tracked things, built}
+{11035}{}{to somewhat resemble ponies, with clear}
+{11036}{}{domed heads that housed real brains. I refused}
+{11037}{}{to think that the ponies who built them might}
+{11038}{}{have used other ponies' brains in the}
+{11039}{}{construction. The thought was just too}
+{11040}{}{horrible. Even doing that to an animal's brain}
+{11041}{}{was awful. And clearly, two-hundred years of}
+{11042}{}{continuous operation had done nothing for their}
+{11043}{}{sanity.}
+{11044}{}{}
+{11045}{}{Come on! We only want to kill you for trespassing!}
+{11046}{}{}
+{11047}{}{Case in point.}
+{11048}{}{}
+{11049}{}{The fact that the voice sounded like a young}
+{11050}{}{filly, despite being clearly artificial, just made}
+{11051}{}{them that much freakier. Fortunately, the railing}
+{11052}{}{on the catwalks leading up to this office were}
+{11053}{}{too narrow for the brain-bots to get up here.}
+{11054}{}{}
+{11055}{}{A much deeper, authoritative voice boomed}
+{11056}{}{across the room. "Surrender in the name of the}
+{11057}{}{Ministry of Technology, zebra scum!"}
+{11058}{}{}
+{11059}{}{I cringed behind a line of metal filing cabinets}
+{11060}{}{as the room filled with a rush of flame!}
+{11061}{}{}
+{11062}{}{Unfortunately, the same could not be said for}
+{11063}{}{}
+{11064}{}{the other type of guard robot I'd crossed paths}
+{11065}{}{with in here. The multi-limbed things looked}
+{11066}{}{like giant metal spiders, many of its arms}
+{11067}{}{seemed to end in weapons, including a}
+{11068}{}{buzzsaw and a flamethrower. And worse, the}
+{11069}{}{damn things could fly!}
+{11070}{}{}
+{11071}{}{I slipped both of my grenades out of my}
+{11072}{}{saddlebags and waited until the flames died}
+{11073}{}{away. The metal cabinets were beginning to}
+{11074}{}{get unpleasantly warm against my back, and}
+{11075}{}{the heat in the air seared my lungs. The}
+{11076}{}{second the flamethrower cut off, I turned my}
+{11077}{}{head around the corner and levitated them both}
+{11078}{}{right up to the metal monster, pulling out the}
+{11079}{}{stems on the way. The moment it saw me, the}
+{11080}{}{robot raised a pulsing green weapon that}
+{11081}{}{looked like a unicorn's horn. Eldritch fire}
+{11082}{}{erupted from it, shooting past me close enough}
+{11083}{}{to singe my cheek. The blast struck an old fan}
+{11084}{}{sitting on the desk behind me; it glowed green}
+{11085}{}{for a moment, then melted! I ducked back as I}
+{11086}{}{dropped the grenades.}
+{11087}{}{}
+{11088}{}{The explosion rocked the office. I heard a}
+{11089}{}{fearsome twang as part of the catwalk outside}
+{11090}{}{gave. Looking back, the robot was in a non-}
+{11091}{}{functional heap. The walkway outside was still}
+{11092}{}{mostly intact, but sagging badly. I wasn't sure it}
+{11093}{}{could hold my weight.}
+{11094}{}{}
+{11095}{}{Stripping what I could from the fallen spider-bot,}
+{11096}{}{I considered my options. I couldn't stay up here}
+{11097}{}{}
+{11098}{}{forever. If I moved very fast, I could run the}
+{11099}{}{walkway without the brain-bots below getting}
+{11100}{}{me. Their weaponry did not seem very}
+{11101}{}{accurate. But the first few yards of the catwalk}
+{11102}{}{}
+{11103}{}{had partially torn free, and sagged}
+{11104}{}{alarmingly. The more I looked at it, the less I}
+{11105}{}{wanted to put a hoof...}
+{11106}{}{**END-DISK**}
+{12000}{}{>To every "Seeker" and "Predator" troop:}
+{12001}{}{>Mandatory}
+{12002}{}{**END-PAR**}
+{12003}{}{**END-PAR**}
+{12004}{}{Recently, there are rumors going among the Radius}
+{12005}{}{population about the so-called Renaissance - an}
+{12006}{}{underground city filled with powerful pre-war}
+{12007}{}{technology. Therefore, your orders are:}
+{12008}{}{**END-PAR**}
+{12009}{}{1. Obtain as much information as possible about}
+{12010}{}{the location of the "Renaissance". 2. Interrogate}
+{12011}{}{anyone spreading the rumors. 3. If additional}
+{12012}{}{information becomes available, report to your}
+{12013}{}{supervisor immediately.}
+{12014}{}{**END-PAR**}
+{12015}{}{**END-PAR**}
+{12016}{}{It is vital for us to locate the Renaissance}
+{12017}{}{before the savages from the Radius find it and}
+{12018}{}{loot it. This project's technology could be the}
+{12019}{}{key to humanity's survival.}
+{12020}{}{**END-DISK**}
+{13000}{}{July 03, 2012}
+{13001}{}{...Will, goddamn it! Stop playing with the}
+{13002}{}{recorder! Why did you turn the record on?}
+{13003}{}{By God, you're so incompetent! All right,}
+{13004}{}{I'll erase it later.}
+{13005}{}{**END-PAR**}
+{13006}{}{**END-PAR**}
+{13007}{}{July 12, 2012}
+{13008}{}{Okay, let's start. This observation report}
+{13009}{}{is recorded by the project "Gamma" chief}
+{13010}{}{biologist, Thomas Stediak. The input data:}
+{13011}{}{a child specimen of the "Chimera" project,}
+{13012}{}{male, of course. We call him "Lucy" in...}
+{13013}{}{hmm... hopes of a successful outcome of}
+{13014}{}{the research. As we know, the Chimera}
+{13015}{}{specimens are a breakthrough success for}
+{13016}{}{the NCASTR bioligists, and, at the same time,}
+{13017}{}{proof of how weak and incapable we are in}
+{13018}{}{comparison to the creator. Every attempt}
+{13019}{}{to create a female Chimera and ensure a}
+{13020}{}{natural reproduction cycle has failed}
+{13021}{}{by now.}
+{13022}{}{}
+{13023}{}{We, the staff of Biolab #2, have taken upon}
+{13024}{}{ourselves the sacred duty to bring the project}
+{13025}{}{to success, and find a way to make the}
+{13026}{}{Chimera species capable of reproduction, with}
+{13027}{}{an additional goal of freeing up the company's}
+{13028}{}{hatchery facilities. Unfortunately, as always,}
+{13029}{}{the "Gamma" project is limited in funding, so}
+{13030}{}{only the following phases are planned:}
+{13031}{}{}
+{13032}{}{I - injections of gray gorilla hormone}
+{13033}{}{extract}
+{13034}{}{II - prolonged exposure to gamma radiation}
+{13035}{}{III - physical impact, to the point of the}
+{13036}{}{extreme reduction of vital signs}
+{13037}{}{The rest will be done in accordance to the}
+{13038}{}{available funding.}
+{13039}{}{}
+{13040}{}{Preparations for the phase I are ready. We}
+{13041}{}{shall begin immediately.}
+{13042}{}{**END-PAR**}
+{13043}{}{**END-PAR**}
+{13044}{}{July 13, 2012}
+{13045}{}{Lucy has tolerated the injection of 0.5 pints}
+{13046}{}{of hormone intramuscularly quite comfortably.}
+{13047}{}{He has been sleeping since yesterday.}
+{13048}{}{For the record: Will is consistently negligent}
+{13049}{}{and clearly sympathetic towards the subject.}
+{13050}{}{**END-PAR**}
+{13051}{}{**END-PAR**}
+{13052}{}{July 14, 2012}
+{13053}{}{The subject has an increased appetite after a}
+{13054}{}{long nap. Today he ate 9 pounds of meat in one}
+{13055}{}{sitting! We are determined to succeed!}
+{13056}{}{**END-PAR**}
+{13057}{}{**END-PAR**}
+{13058}{}{July 15, 2012}
+{13059}{}{Continuing observation. The subject begins to}
+{13060}{}{show signs of emotional distress: he growls at}
+{13061}{}{our scientists, does not allow anyone to enter}
+{13062}{}{his cage, bites the bars of his cage. This}
+{13063}{}{is a clear sign of hormonal changes taking place,}
+{13064}{}{which means that we are on the right track and}
+{13065}{}{will soon show the results worthy of our funding!}
+{13066}{}{**END-PAR**}
+{13067}{}{**END-PAR**}
+{13068}{}{July 21, 2012}
+{13069}{}{It is too early to draw conclusions yet, but}
+{13070}{}{it seems that the first stage has not yielded}
+{13071}{}{the desired results. Lucy's blood test results}
+{13072}{}{show no expected genetic changes. The subject}
+{13073}{}{has calmed down and his behavior is no different}
+{13074}{}{from the initial state. Preparing materials for}
+{13075}{}{the second stage.}
+{13076}{}{For the record: the morphine keeps disappearing}
+{13077}{}{from the locker, the coded lock didn't help at}
+{13078}{}{all.}
+{13079}{}{It must be that dumb idiot Will Hunting...}
+{13080}{}{**END-PAR**}
+{13081}{}{**END-PAR**}
+{13082}{}{August 04, 2012}
+{13083}{}{The upgraded emitter finally arrived from}
+{13084}{}{headquarters! Honestly - they could be a little}
+{13085}{}{more hurried up! Every hour of delay could lead}
+{13086}{}{the "Gamma" project to a failure! Those}
+{13087}{}{bureaucrats are always putting sticks into our}
+{13088}{}{wheels.}
+{13089}{}{**END-PAR**}
+{13090}{}{**END-PAR**}
+{13091}{}{August 06, 2012}
+{13092}{}{Not only was there a transportation delay,}
+{13093}{}{but the emitter doesn't appear to be}
+{13094}{}{working either! We've spent all day without}
+{13095}{}{electricity until HQ sent their specialists!}
+{13096}{}{Hopefully, the emitter will be set up in the}
+{13097}{}{next few days.}
+{13098}{}{**END-PAR**}
+{13099}{}{**END-PAR**}
+{13100}{}{August 07, 2012}
+{13101}{}{Lucy has noticeably increased in size. Perhaps}
+{13102}{}{we should postpone the second stage and continue}
+{13103}{}{observation.}
+{13104}{}{**END-PAR**}
+{13105}{}{**END-PAR**}
+{13106}{}{August 08, 2012}
+{13107}{}{According to the recent instructions, we have to}
+{13108}{}{finish the project as soon as possible, so we}
+{13109}{}{are proceeding to the second phase.}
+{13110}{}{For the record: the subject continues to increase}
+{13111}{}{in size, the growth has already reached about 75%,}
+{13112}{}{and we do not know the reason behind this!}
+{13113}{}{I have to state that the experiment is out of}
+{13114}{}{control and I'm not sure if we can replicate the}
+{13115}{}{result.}
+{13116}{}{**END-PAR**}
+{13117}{}{**END-PAR**}
+{13118}{}{August 09, 2012}
+{13119}{}{Lucy was exposed to the first dose of emitter}
+{13120}{}{beams. The subject behaved extremely erratically,}
+{13121}{}{trying to break free from the cage.}
+{13122}{}{I think he was looking at Will...}
+{13123}{}{**END-PAR**}
+{13124}{}{**END-PAR**}
+{13125}{}{August 10, 2012}
+{13126}{}{We urgently need new reinforced bars for the cage!}
+{13127}{}{Lucy severely damaged two of the bars around the}
+{13128}{}{door last night, and I'm worried that the subject}
+{13129}{}{might break out. So far we have drugged him with}
+{13130}{}{tranquilizers, but that has taken almost all of our}
+{13131}{}{supplies! I guess I'll head to headquarters myself}
+{13132}{}{to pick up the bars of the right quality.}
+{13133}{}{**END-DISK**}
