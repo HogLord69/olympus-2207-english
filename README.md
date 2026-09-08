@@ -10,14 +10,27 @@ patch to an install you already have with `oly_tool.py`.
 
 **42,296 strings across 270 files. No Russian left.**
 
-Plus the half that is not strings: **212 files** of interface art with English
-baked into the pixels, premade characters, cutscene narration, the help screen,
-sfall's own `.ini` messages and the mod folders — shipped as
-`Olympus2207-FE-English-Patch.zip` in [Releases](../../releases), 2.4 MB, for
-anyone who already has the game and does not want the 1.7 GB build.
+Plus **213 files** the string pipeline cannot produce: interface art with
+English baked into the pixels, premade characters, cutscene narration, the help
+screen, sfall's own `.ini` messages, the mod folders, and the `.msg` files that
+had to be repaired by hand. They ship as `Olympus2207-FE-English-Patch.zip` in
+[Releases](../../releases), 2.4 MB, for anyone who already has the game and does
+not want the 1.7 GB build.
 
-The art is the official English 1.2 release's, so it is **not committed here** —
-this repository stays text and tooling, same as the others.
+Those 213 files **are committed**, in [`payload/`](payload/). Earlier wording
+here said they were not, and that this repository stayed text and tooling like
+the sibling ones — that was wrong, and this corrects it.
+
+They are game files, derived from the official English 1.2 release and from the
+Fixed Edition: 127 `.frm` interface images with English baked into the pixels,
+11 `.pcx`, 9 premade character records, 2 compiled sfall scripts patched in
+place, and sfall's `translations.ini`. They are here because a localization that
+is partly *pictures of words* cannot be shipped as text, and rebuilding them
+needs both original builds on disk.
+
+What is **not** here, and never will be: the game. No `master.dat`, no maps,
+protos, audio, movies or executables. This is not a way to obtain Olympus 2207 —
+you need Foxx's Fixed Edition first.
 
 ---
 
@@ -239,6 +252,16 @@ tr/t000.py          the 98 hand translations, keyed by russian text
 
 ## Licence and credit
 
-Tooling and English text: MIT, see [LICENSE](LICENSE). Take it, pass it on.
+The tooling and the English text are MIT — see [LICENSE](LICENSE). Take them,
+pass them on.
+
+That licence does **not** reach the files under `payload/` that are derived from
+the game: the `.frm` and `.pcx` artwork, the premade character records, the two
+compiled sfall scripts and `translations.ini`. Those are the original authors'
+work with English text put into them, and they carry whatever terms the original
+does. They are redistributed here on the same footing as any Fallout 2 mod, in
+the hope that the people who own them consider a translation fair use of their
+work. **If Nebesa Games or Foxx would rather they were not, say so and they come
+down the same day.**
 
 Olympus 2207 belongs to its authors — see [CREDITS.md](CREDITS.md). Credit them.

@@ -1,4 +1,6 @@
-# Never commit game assets
+# Game files, except the localized ones under payload/ which are the point of
+# the repo (see README). Without the exception a new payload asset is skipped
+# silently by `git add` -- which is how sfall/translations.ini went missing.
 *.dat
 *.DAT
 *.orig
@@ -7,6 +9,7 @@
 *.exe
 *.dll
 *.pdf
+!payload/**
 
 # Python
 __pycache__/
