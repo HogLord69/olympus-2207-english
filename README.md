@@ -10,14 +10,15 @@ patch to an install you already have with `oly_tool.py`.
 
 **42,296 strings across 270 files. No Russian left.**
 
-Plus **213 files** the string pipeline cannot produce: interface art with
-English baked into the pixels, premade characters, cutscene narration, the help
-screen, sfall's own `.ini` messages, the mod folders, and the `.msg` files that
-had to be repaired by hand. They ship as `Olympus2207-FE-English-Patch.zip` in
+Plus **214 files** the string pipeline cannot produce: interface art with
+English baked into the pixels, premade characters, cutscene narration, English
+subtitles for the intro's Russian newspaper headlines, the help screen, sfall's
+own `.ini` messages, the mod folders, and the `.msg` files that had to be
+repaired by hand. They ship as `Olympus2207-FE-English-Patch.zip` in
 [Releases](../../releases), 2.4 MB, for anyone who already has the game and does
 not want the 1.7 GB build.
 
-Those 213 files **are committed**, in [`payload/`](payload/). Earlier wording
+Those 214 files **are committed**, in [`payload/`](payload/). Earlier wording
 here said they were not, and that this repository stayed text and tooling like
 the sibling ones — that was wrong, and this corrects it.
 

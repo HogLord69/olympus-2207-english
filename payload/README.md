@@ -14,7 +14,8 @@ data/premade/          9 files    character names and biographies
 data/art/intrface/   126 files    interface art with English captions
 data/art/inven/        1 file     dagnote.frm
 data/pcx/             11 files    help screen and tip buttons
-data/text/english/    62 files    narration, credits, screen names, repairs
+data/text/english/    63 files    narration, credits, screen names, repairs,
+                                  intro subtitles
 sfall/                 2 files    translations.ini and the Key Mod script
 mods/                  2 files    KeysHelp and InventoryFilter
 ```
@@ -131,6 +132,31 @@ reported as crashing the game when placed in a hand slot. The English artwork is
 now inside FE's own 300×322 frame — trimmed of its transparent margin, scaled
 uniformly, and centred — byte-for-byte the original file size. Unconfirmed as
 the cause; it restores the only geometry this build shipped with.
+
+## Intro subtitles
+
+The intro is seven pages of the *Sacramento Chronicles* with the headlines
+printed in Russian inside the video. `cuts/INTRO.SVE` puts English subtitles
+under them — the headline as each page settles, then its subheadings — and
+clears during each dissolve so no line sits over the wrong page. Players need
+**Preferences → Subtitles** switched on.
+
+Wording follows the English 1.2 release's own intro, which carries the same
+newspapers typeset in English, and uses the holodisk's terms for the two
+invented states: РЕИ is the **UER**, ВША the **GSA**.
+
+**Cue numbers count presented frames, not time.** The engine reads each
+`frame:text` against the MVE player's frame counter, which advances on opcode
+`0x07` ("send buffer"). This video has 6,481 timer ticks but only 1,020
+presented frames, because a still page reuses one frame for about seven ticks.
+`ffprobe -show_frames` lists the 1,020; a constant-rate `ffmpeg` decode pads to
+about 6,454, and cue numbers taken from it land every subtitle roughly six times
+too early. MVE also cannot be seeked — decode from the start and select frames
+by index.
+
+The English 1.2 intro was not substituted instead: it is a different, shorter
+cut (98 s against 269 s) that crams the same pages together, and taking it would
+throw away the Fixed Edition's edit.
 
 ## Text
 
