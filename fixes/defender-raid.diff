@@ -1,0 +1,44 @@
+--- a/olxcchef.ssl  (as shipped, decompiled)
++++ b/olxcchef.ssl  (fixed)
+@@ -142,6 +142,11 @@
+ 		set_local_var(11, 2);
+ 		add_timer_event(self_obj, random(2, 10), 9);
+ 	end
++	if ((global_var(336) == 1) and (local_var(9) == 1)) then begin
++		set_local_var(9, 0);
++		party_remove(self_obj);
++		move_to(self_obj, tile_num(self_obj), 2);
++	end
+ 	if (obj_can_see_obj(self_obj, dude_obj)) then begin
+ 		if ((local_var(2) == 1) or (global_var(59) <= -31)) then begin
+ 			set_local_var(2, 0);
+--- a/oln34.ssl  (as shipped, decompiled)
++++ b/oln34.ssl  (fixed)
+@@ -434,8 +434,11 @@
+ procedure Node011
+ begin
+ 	fadeOut(800);
+-	def_suit := create_object_sid(129, 1, 1, -1);
+-	add_obj_to_inven(dude_obj, def_suit);
++	def_suit := obj_carrying_pid_obj(dude_obj, 129);
++	if (not(def_suit)) then begin
++		def_suit := create_object_sid(129, 1, 1, -1);
++		add_obj_to_inven(dude_obj, def_suit);
++	end
+ 	wield_obj_critter(dude_obj, def_suit);
+ 	metarule3(107, dude_obj, 16777255, 0);
+ 	fadeIn(800);
+@@ -446,8 +449,11 @@
+ procedure Node012
+ begin
+ 	fadeOut(800);
+-	def_suit := create_object_sid(129, 1, 1, -1);
+-	add_obj_to_inven(dude_obj, def_suit);
++	def_suit := obj_carrying_pid_obj(dude_obj, 129);
++	if (not(def_suit)) then begin
++		def_suit := create_object_sid(129, 1, 1, -1);
++		add_obj_to_inven(dude_obj, def_suit);
++	end
+ 	wield_obj_critter(dude_obj, def_suit);
+ 	metarule3(107, dude_obj, 16777255, 0);
+ 	fadeIn(800);

@@ -10,22 +10,23 @@ patch to an install you already have with `oly_tool.py`.
 
 **42,296 strings across 270 files. No Russian left.**
 
-Plus **214 files** the string pipeline cannot produce: interface art with
+Plus **216 files** the string pipeline cannot produce: interface art with
 English baked into the pixels, premade characters, cutscene narration, English
 subtitles for the intro's Russian newspaper headlines, the help screen, sfall's
-own `.ini` messages, the mod folders, and the `.msg` files that had to be
-repaired by hand. They ship as `Olympus2207-FE-English-Patch.zip` in
+own `.ini` messages, the mod folders, the `.msg` files that had to be repaired
+by hand, and two quest scripts with Fixed Edition bugs fixed — see
+[Gameplay fixes](#gameplay-fixes). They ship as `Olympus2207-FE-English-Patch.zip` in
 [Releases](../../releases), 2.4 MB, for anyone who already has the game and does
 not want the 1.7 GB build.
 
-Those 214 files **are committed**, in [`payload/`](payload/). Earlier wording
+Those 216 files **are committed**, in [`payload/`](payload/). Earlier wording
 here said they were not, and that this repository stayed text and tooling like
 the sibling ones — that was wrong, and this corrects it.
 
 They are game files, derived from the official English 1.2 release and from the
 Fixed Edition: 127 `.frm` interface images with English baked into the pixels,
 11 `.pcx`, 9 premade character records, 2 compiled sfall scripts patched in
-place, and sfall's `translations.ini`. They are here because a localization that
+place, 2 recompiled quest scripts, and sfall's `translations.ini`. They are here because a localization that
 is partly *pictures of words* cannot be shipped as text, and rebuilding them
 needs both original builds on disk.
 
@@ -242,6 +243,26 @@ reporting what it wrote tells you nothing about what it didn't.
 5. **Do not rebuild `master.dat`.** Loose files under `data/` are the supported
    override path.
 
+## Gameplay fixes
+
+Two bugs in the Fixed Edition's Defender raid — the mission Captain #34 sends
+you on — are fixed in the patch. They are not translation problems, but players
+of this build hit them:
+
+- **The squad leader becomes a permanent follower** if you leave the raid map
+  (through the cave, say) instead of telling him it's time to go home. The
+  soldiers have a backup check that removes them once the raid is over; the
+  leader never had one. He gets the same check now.
+- **Captain #34 hands you a second Defender suit** when you already carry one.
+  He now puts you in the one you have.
+
+What went wrong, how it was fixed and how it was verified is in
+[`fixes/defender-raid.md`](fixes/defender-raid.md), with the exact source change
+in [`fixes/defender-raid.diff`](fixes/defender-raid.diff). The scripts were
+decompiled with int2ssl and recompiled with sslc; the untouched source
+recompiles byte-identical to what the game shipped, so the diff is the whole
+change.
+
 ## Layout
 
 ```
@@ -249,6 +270,8 @@ oly_tool.py         survey / port / translate / verify / remaining
 pipboy_reflow.py    holodisk re-flow
 port_scrnset.py     the screen-settings UI, which sits outside master.dat
 tr/t000.py          the 98 hand translations, keyed by russian text
+payload/            files copied over the game folder (see payload/README.md)
+fixes/              write-ups and source diffs for the gameplay fixes
 ```
 
 ## Licence and credit

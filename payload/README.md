@@ -3,7 +3,8 @@
 `oly_tool.py` handles dialogue and UI strings. This folder holds everything the
 pipeline does not reach: artwork with text baked into the pixels, premade
 character records, narration files, two mod folders, sfall's own `.ini`
-messages, and the handful of `.msg` files that had to be repaired by hand.
+messages, the handful of `.msg` files that had to be repaired by hand, and two
+quest scripts with Fixed Edition bugs fixed.
 
 The tree mirrors the game folder. Copy `payload/` over your install and the
 engine picks it up — `ddraw.ini`'s load order puts loose files under `data/`
@@ -16,6 +17,7 @@ data/art/inven/        1 file     dagnote.frm
 data/pcx/             11 files    help screen and tip buttons
 data/text/english/    63 files    narration, credits, screen names, repairs,
                                   intro subtitles
+data/scripts/          2 files    Defender raid fixes (olxcchef, oln34)
 sfall/                 2 files    translations.ini and the Key Mod script
 mods/                  2 files    KeysHelp and InventoryFilter
 ```
@@ -132,6 +134,23 @@ reported as crashing the game when placed in a hand slot. The English artwork is
 now inside FE's own 300×322 frame — trimmed of its transparent margin, scaled
 uniformly, and centred — byte-for-byte the original file size. Unconfirmed as
 the cause; it restores the only geometry this build shipped with.
+
+## Defender raid scripts
+
+`data/scripts/olxcchef.int` and `data/scripts/oln34.int` fix two bugs in the
+Fixed Edition's Defender raid. Neither is a translation problem.
+
+- **`olxcchef.int`, the Punisher squad leader.** Leaving the raid map ends the
+  mission: every squad member starts a timer, the first to finish loads
+  Olympus, and the engine cancels the rest on the map change. The soldiers have
+  a per-update check that removes them from the party once global 336 says the
+  raid is over. The leader had none, so he stayed in your party for good. He now
+  runs the soldiers' exact check — five lines, copied from `olxcartl.int`.
+- **`oln34.int`, Captain #34.** "Here's your Defender suit" created a new suit
+  even if you already carried one. He now puts you in yours, and only creates
+  one when you have none.
+
+Full write-up, and the exact source change: [`../fixes/defender-raid.md`](../fixes/defender-raid.md).
 
 ## Intro subtitles
 
