@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """Build the distributable archive: a single self-contained, ready-to-play folder.
 
-    python release.py --out "C:\\sotj-release"
+    python release_bundle.py --out "C:\\olympus-release"
 
-Produces Fallout-Story-of-the-Jackal-English.zip, which extracts to one folder
+Produces Olympus-2207-English.zip, which extracts to one folder
 you launch from directly. The English text is already applied -- this packages
 the installed state, it does not translate anything. Run
 `python oly_tool.py verify` first; this script refuses to build if any Russian
 is left on disk.
 
-The game is ~640 MB, so it fits GitHub's 2 GB per-asset limit in one piece.
+The archive is ~1.8 GB, under GitHub's 2 GB per-asset limit -- the script
+refuses to finish if it goes over.
 """
 import argparse
 import os
@@ -26,7 +27,7 @@ SEVENZIP = [r"C:\Program Files\7-Zip\7z.exe", r"C:\Program Files (x86)\7-Zip\7z.
 ASSET_LIMIT = 2 * 1000 ** 3
 
 # Backups and working files a player has no use for.
-SKIP_FILES = ["*.orig", "*.dmp", "sfall-log*.txt", "*.log"]
+SKIP_FILES = ["*.orig", "*.bak", "*.dmp", "sfall-log*.txt", "*.log"]
 # Personal savegames are never redistributed; the empty folder is
 # recreated below so the game can still save.
 SKIP_DIRS = ["uninstall", os.path.join("data", "savegame")]
@@ -37,8 +38,8 @@ cd /d "%~dp0"
 start "" "{exe}"
 """
 
-READ_ME = """FALLOUT: STORY OF THE JACKAL -- ENGLISH
-=======================================
+READ_ME = """OLYMPUS 2207 -- ENGLISH
+=======================
 
 Fixed Edition, build 03.08.26 - a rebuild by Foxx
 

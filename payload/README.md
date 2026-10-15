@@ -172,27 +172,41 @@ Full write-up, and the exact source change: [`../fixes/defender-raid.md`](../fix
 ## Intro subtitles
 
 The intro is seven pages of the *Sacramento Chronicles* with the headlines
-printed in Russian inside the video. `cuts/INTRO.SVE` puts English subtitles
-under them — the headline as each page settles, then its subheadings — and
-clears during each dissolve so no line sits over the wrong page. Players need
-**Preferences → Subtitles** switched on.
+printed in Russian inside the video. `cuts/INTRO.SVE` puts one English subtitle
+under each page — the headline, with its subheading where it fits — switched
+halfway through each dissolve so the text always matches the page on screen.
+The last page holds longer and gets two. Players need **Preferences →
+Subtitles** switched on.
 
 Wording follows the English 1.2 release's own intro, which carries the same
 newspapers typeset in English, and uses the holodisk's terms for the two
 invented states: РЕИ is the **UER**, ВША the **GSA**.
 
-**Cue numbers count presented frames, not time.** The engine reads each
-`frame:text` against the MVE player's frame counter, which advances on opcode
-`0x07` ("send buffer"). This video has 6,481 timer ticks but only 1,020
-presented frames, because a still page reuses one frame for about seven ticks.
-`ffprobe -show_frames` lists the 1,020; a constant-rate `ffmpeg` decode pads to
-about 6,454, and cue numbers taken from it land every subtitle roughly six times
-too early. MVE also cannot be seeked — decode from the start and select frames
-by index.
+### How subtitles behave in this engine
 
-The English 1.2 intro was not substituted instead: it is a different, shorter
-cut (98 s against 269 s) that crams the same pages together, and taking it would
-throw away the Fixed Edition's edit.
+Checked against fallout2-ce (`movie.cc`, `movie_lib.cc`) and sfall's HRP
+(`HRP/MoviesScreen.cpp`):
+
+- **A cue `N:text` fires on the N-th frame shown** — the counter is
+  `rm_FrameCount`, incremented on MVE opcode `0x07`. This intro shows 1,020.
+- **Playback waits one timer tick per frame shown.** The intro runs **42.5 s**
+  at 24 fps, so each page is on screen for about 4 s. ffmpeg's timestamps for
+  this file are inflated about six-fold (it counts container chunks), which is
+  how the first version of these subtitles came to be timed as if the intro ran
+  269 s: they landed on the right pages but lasted as little as 1.1 s each.
+- **The subtitle box is one line tall.** Text is word-wrapped, but every line
+  after the first is silently dropped. The wrap width is the screen width under
+  sfall's HRP (1280 by default here) and 640 at native 640×480, so every cue is
+  kept under 640 px in the game's font (`font1.aaf`, font 101; the widest is
+  577 px).
+- sfall's HRP shrinks the movie to leave a strip for the subtitle line and
+  centres the line in it.
+
+Each cue is up for 3.5–6.1 s at no more than 18 characters a second.
+
+The English 1.2 intro was not swapped in: both play for about 42 s over the
+identical soundtrack, but the English one is a lower-bitrate encode (97 MB
+against 264 MB) and its frames decode here with visible block artifacts.
 
 ## Text
 
