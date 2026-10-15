@@ -10,25 +10,25 @@ patch to an install you already have with `oly_tool.py`.
 
 **42,296 strings across 270 files. No Russian left.**
 
-Plus **216 files** the string pipeline cannot produce: interface art with
+Plus **217 files** the string pipeline cannot produce: interface art with
 English baked into the pixels, premade characters, cutscene narration, English
-subtitles for the intro's Russian newspaper headlines, the help screen, sfall's
-own `.ini` messages, the mod folders, the `.msg` files that had to be repaired
-by hand, and two quest scripts with Fixed Edition bugs fixed — see
-[Gameplay fixes](#gameplay-fixes). They ship as `Olympus2207-FE-English-Patch.zip` in
-[Releases](../../releases), 2.4 MB, for anyone who already has the game and does
-not want the 1.7 GB build.
+subtitles for the intro's Russian newspaper headlines, the English "10 years
+later..." title card, the help screen, sfall's own `.ini` messages, the mod
+folders, the `.msg` files that had to be repaired by hand, and two quest scripts
+with Fixed Edition bugs fixed — see [Gameplay fixes](#gameplay-fixes). They ship
+as `Olympus2207-FE-English-Patch.zip` in [Releases](../../releases), 3.0 MB, for
+anyone who already has the game and does not want the 1.7 GB build.
 
-Those 216 files **are committed**, in [`payload/`](payload/). Earlier wording
+Those 217 files **are committed**, in [`payload/`](payload/). Earlier wording
 here said they were not, and that this repository stayed text and tooling like
 the sibling ones — that was wrong, and this corrects it.
 
 They are game files, derived from the official English 1.2 release and from the
 Fixed Edition: 127 `.frm` interface images with English baked into the pixels,
 11 `.pcx`, 9 premade character records, 2 compiled sfall scripts patched in
-place, 2 recompiled quest scripts, and sfall's `translations.ini`. They are here because a localization that
-is partly *pictures of words* cannot be shipped as text, and rebuilding them
-needs both original builds on disk.
+place, 2 recompiled quest scripts, one movie, and sfall's `translations.ini`.
+They are here because a localization that is partly *pictures of words* cannot
+be shipped as text, and rebuilding them needs both original builds on disk.
 
 What is **not** here, and never will be: the game. No `master.dat`, no maps,
 protos, audio, movies or executables. This is not a way to obtain Olympus 2207 —

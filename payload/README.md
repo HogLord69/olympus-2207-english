@@ -18,6 +18,7 @@ data/pcx/             11 files    help screen and tip buttons
 data/text/english/    63 files    narration, credits, screen names, repairs,
                                   intro subtitles
 data/scripts/          2 files    Defender raid fixes (olxcchef, oln34)
+data/art/cuts/         1 file     VSUIT.MVE, the "10 years later..." title card
 sfall/                 2 files    translations.ini and the Key Mod script
 mods/                  2 files    KeysHelp and InventoryFilter
 ```
@@ -134,6 +135,22 @@ reported as crashing the game when placed in a hand slot. The English artwork is
 now inside FE's own 300×322 frame — trimmed of its transparent margin, scaled
 uniformly, and centred — byte-for-byte the original file size. Unconfirmed as
 the cause; it restores the only geometry this build shipped with.
+
+## "10 years later..." title card
+
+`data/art/cuts/VSUIT.MVE` is the short movie that plays a few missions in: a
+black screen and one line of yellow text. The Fixed Edition's says
+*10 ЛЕТ СПУСТЯ...*; this is the English 1.2 release's own movie, which says
+*10 YEARS LATER...* in the same lettering.
+
+It is the English release's file as shipped, not a re-encode. It runs 5 s
+against the Fixed Edition's 4 s and its sound sting is quieter and at 48 kHz,
+but the English release played it with the same `OLYMPUS.EXE`, and an MVE
+declares its own audio format. `VSUIT.PAL` is identical in both builds, so only
+the movie changes.
+
+The patch overwrites the Fixed Edition's `VSUIT.MVE`, which lives loose in
+`data/art/cuts/` rather than in an archive. Keep a copy if you want to revert.
 
 ## Defender raid scripts
 
